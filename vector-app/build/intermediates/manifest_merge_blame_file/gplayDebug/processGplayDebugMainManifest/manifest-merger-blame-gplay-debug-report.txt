@@ -232,7 +232,7 @@
 119-->/home/dk/Desktop/repos/TarkAndroidX/vector-app/src/main/AndroidManifest.xml:16:9-54
 120        android:supportsRtl="true"
 120-->/home/dk/Desktop/repos/TarkAndroidX/vector-app/src/main/AndroidManifest.xml:17:9-35
-121        android:taskAffinity="im.vector.app.debug.H_a9f1263f"
+121        android:taskAffinity="im.vector.app.debug.H_599460ab"
 121-->/home/dk/Desktop/repos/TarkAndroidX/vector-app/src/main/AndroidManifest.xml:18:9-73
 122        android:testOnly="true"
 123        android:theme="@style/Theme.Vector.Light" >
@@ -753,7 +753,7 @@
 388-->[:vector] /home/dk/Desktop/repos/TarkAndroidX/vector/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:305:13-44
 389            android:supportsPictureInPicture="true"
 389-->[:vector] /home/dk/Desktop/repos/TarkAndroidX/vector/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:306:13-52
-390            android:taskAffinity=".features.call.VectorCallActivity.H_a9f1263f" /> <!-- PIP Support https://developer.android.com/guide/topics/ui/picture-in-picture -->
+390            android:taskAffinity=".features.call.VectorCallActivity.H_599460ab" /> <!-- PIP Support https://developer.android.com/guide/topics/ui/picture-in-picture -->
 390-->[:vector] /home/dk/Desktop/repos/TarkAndroidX/vector/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:307:13-80
 391        <activity
 391-->[:vector] /home/dk/Desktop/repos/TarkAndroidX/vector/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:309:9-313:55

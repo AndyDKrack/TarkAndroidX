@@ -15,9 +15,9 @@ public final class BuildConfig {
   // Field from default config.
   public static final String GIT_BRANCH_NAME = "main";
   // Field from default config.
-  public static final String GIT_REVISION = "a9f1263f";
+  public static final String GIT_REVISION = "599460ab";
   // Field from default config.
-  public static final String GIT_REVISION_DATE = "2025-11-10 14:34:13 +0300";
+  public static final String GIT_REVISION_DATE = "2025-11-12 11:21:42 +0300";
   // Field from product flavor: gplay
   public static final String SHORT_FLAVOR_DESCRIPTION = "G";
 }

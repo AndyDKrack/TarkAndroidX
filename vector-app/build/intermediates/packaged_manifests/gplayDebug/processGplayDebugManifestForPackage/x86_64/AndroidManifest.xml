@@ -118,7 +118,7 @@
         android:resizeableActivity="true"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:taskAffinity="im.vector.app.debug.H_a9f1263f"
+        android:taskAffinity="im.vector.app.debug.H_599460ab"
         android:testOnly="true"
         android:theme="@style/Theme.Vector.Light" >
         <activity android:name="im.vector.app.features.debug.TestLinkifyActivity" />
@@ -387,7 +387,7 @@
             android:excludeFromRecents="true"
             android:launchMode="singleTask"
             android:supportsPictureInPicture="true"
-            android:taskAffinity=".features.call.VectorCallActivity.H_a9f1263f" /> <!-- PIP Support https://developer.android.com/guide/topics/ui/picture-in-picture -->
+            android:taskAffinity=".features.call.VectorCallActivity.H_599460ab" /> <!-- PIP Support https://developer.android.com/guide/topics/ui/picture-in-picture -->
         <activity
             android:name="im.vector.app.features.call.conference.VectorJitsiActivity"
             android:configChanges="orientation|smallestScreenSize|screenLayout|screenSize"

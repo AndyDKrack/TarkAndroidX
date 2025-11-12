@@ -2120,6 +2120,7 @@ color half_transparent_status_bar
 color hard_resource_limit_exceeded
 color highlighted_text_material_dark
 color highlighted_text_material_light
+color ic_launcher_background
 color inline_code_bg
 color inline_code_border
 color join_conference_animated_color

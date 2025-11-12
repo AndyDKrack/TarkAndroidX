@@ -2119,6 +2119,7 @@ int color half_transparent_status_bar 0x7f06009e
 int color hard_resource_limit_exceeded 0x7f06009f
 int color highlighted_text_material_dark 0x7f0600a0
 int color highlighted_text_material_light 0x7f0600a1
+int color ic_launcher_background 0x7f060435
 int color inline_code_bg 0x7f0600a2
 int color inline_code_border 0x7f0600a3
 int color join_conference_animated_color 0x7f0600a4

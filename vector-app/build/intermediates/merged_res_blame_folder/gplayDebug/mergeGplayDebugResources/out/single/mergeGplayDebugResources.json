@@ -1,11 +1,11 @@
 [
     {
-        "merged": "/home/dk/.gradle/daemon/8.14.3/im.vector.application.vector-app-gplayDebug-121:/mipmap-xhdpi_ic_launcher.png.flat",
-        "source": "/home/dk/.gradle/daemon/8.14.3/im.vector.application.vector-app-main-125:/mipmap-xhdpi/ic_launcher.png"
+        "merged": "im.vector.application.vector-app-gplayDebug-121:/mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "im.vector.application.vector-app-main-125:/mipmap-xhdpi/ic_launcher.webp"
     },
     {
-        "merged": "im.vector.application.vector-app-gplayDebug-121:/drawable_ic_launcher_monochrome.xml.flat",
-        "source": "im.vector.application.vector-app-main-125:/drawable/ic_launcher_monochrome.xml"
+        "merged": "/home/dk/.gradle/daemon/8.14.3/im.vector.application.vector-app-gplayDebug-121:/mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "/home/dk/.gradle/daemon/8.14.3/im.vector.application.vector-app-main-125:/mipmap-xhdpi/ic_launcher.png"
     },
     {
         "merged": "/home/dk/.gradle/daemon/8.14.3/im.vector.application.vector-app-gplayDebug-121:/drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
@@ -32,12 +32,12 @@
         "source": "/home/dk/.gradle/daemon/8.14.3/im.vector.application.vector-app-gplay-115:/drawable-xhdpi/ic_launcher_background.png"
     },
     {
-        "merged": "/home/dk/.gradle/daemon/8.14.3/im.vector.application.vector-app-gplayDebug-121:/drawable-xhdpi_ic_launcher_foreground.png.flat",
-        "source": "/home/dk/.gradle/daemon/8.14.3/im.vector.application.vector-app-gplay-115:/drawable-xhdpi/ic_launcher_foreground.png"
-    },
-    {
         "merged": "/home/dk/.gradle/daemon/8.14.3/im.vector.application.vector-app-gplayDebug-121:/drawable-xxxhdpi_ic_launcher_background.png.flat",
         "source": "/home/dk/.gradle/daemon/8.14.3/im.vector.application.vector-app-gplay-115:/drawable-xxxhdpi/ic_launcher_background.png"
+    },
+    {
+        "merged": "/home/dk/.gradle/daemon/8.14.3/im.vector.application.vector-app-gplayDebug-121:/drawable-xhdpi_ic_launcher_foreground.png.flat",
+        "source": "/home/dk/.gradle/daemon/8.14.3/im.vector.application.vector-app-gplay-115:/drawable-xhdpi/ic_launcher_foreground.png"
     },
     {
         "merged": "/home/dk/.gradle/daemon/8.14.3/im.vector.application.vector-app-gplayDebug-121:/layout_fragment_debug_analytics.xml.flat",
@@ -52,12 +52,24 @@
         "source": "/home/dk/.gradle/daemon/8.14.3/im.vector.application.vector-app-debug-122:/layout/activity_debug_jitsi.xml"
     },
     {
+        "merged": "im.vector.application.vector-app-gplayDebug-121:/drawable_ic_launcher_background.xml.flat",
+        "source": "im.vector.application.vector-app-main-125:/drawable/ic_launcher_background.xml"
+    },
+    {
+        "merged": "im.vector.application.vector-app-gplayDebug-121:/mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "im.vector.application.vector-app-main-125:/mipmap-hdpi/ic_launcher.webp"
+    },
+    {
         "merged": "/home/dk/.gradle/daemon/8.14.3/im.vector.application.vector-app-gplayDebug-121:/mipmap-xxxhdpi_ic_launcher.png.flat",
         "source": "/home/dk/.gradle/daemon/8.14.3/im.vector.application.vector-app-main-125:/mipmap-xxxhdpi/ic_launcher.png"
     },
     {
         "merged": "/home/dk/.gradle/daemon/8.14.3/im.vector.application.vector-app-gplayDebug-121:/xml_shortcuts.xml.flat",
         "source": "/home/dk/.gradle/daemon/8.14.3/im.vector.application.vector-app-debug-122:/xml/shortcuts.xml"
+    },
+    {
+        "merged": "im.vector.application.vector-app-gplayDebug-121:/mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "im.vector.application.vector-app-main-125:/mipmap-xhdpi/ic_launcher_round.webp"
     },
     {
         "merged": "/home/dk/.gradle/daemon/8.14.3/im.vector.application.vector-app-gplayDebug-121:/mipmap-xxhdpi_ic_launcher_round.png.flat",
@@ -68,8 +80,16 @@
         "source": "/home/dk/.gradle/daemon/8.14.3/im.vector.application.vector-app-main-125:/xml/vector_app_restrictions.xml"
     },
     {
+        "merged": "im.vector.application.vector-app-gplayDebug-121:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "im.vector.application.vector-app-main-125:/mipmap-xxhdpi/ic_launcher_round.webp"
+    },
+    {
         "merged": "/home/dk/.gradle/daemon/8.14.3/im.vector.application.vector-app-gplayDebug-121:/drawable-ldpi_ic_launcher_foreground.png.flat",
         "source": "/home/dk/.gradle/daemon/8.14.3/im.vector.application.vector-app-gplay-115:/drawable-ldpi/ic_launcher_foreground.png"
+    },
+    {
+        "merged": "im.vector.application.vector-app-gplayDebug-121:/mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "im.vector.application.vector-app-main-125:/mipmap-mdpi/ic_launcher_round.webp"
     },
     {
         "merged": "/home/dk/.gradle/daemon/8.14.3/im.vector.application.vector-app-gplayDebug-121:/layout_view_boolean_dropdown.xml.flat",
@@ -92,8 +112,16 @@
         "source": "/home/dk/.gradle/daemon/8.14.3/im.vector.application.vector-app-debug-122:/layout/demo_themes.xml"
     },
     {
+        "merged": "im.vector.application.vector-app-gplayDebug-121:/mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "im.vector.application.vector-app-main-125:/mipmap-xxhdpi/ic_launcher.webp"
+    },
+    {
         "merged": "/home/dk/.gradle/daemon/8.14.3/im.vector.application.vector-app-gplayDebug-121:/drawable-xxhdpi_ic_launcher_foreground.png.flat",
         "source": "/home/dk/.gradle/daemon/8.14.3/im.vector.application.vector-app-gplay-115:/drawable-xxhdpi/ic_launcher_foreground.png"
+    },
+    {
+        "merged": "im.vector.application.vector-app-gplayDebug-121:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "im.vector.application.vector-app-main-125:/mipmap-xxxhdpi/ic_launcher_round.webp"
     },
     {
         "merged": "/home/dk/.gradle/daemon/8.14.3/im.vector.application.vector-app-gplayDebug-121:/raw_third_party_license_metadata.flat",
@@ -128,6 +156,14 @@
         "source": "/home/dk/.gradle/daemon/8.14.3/im.vector.application.vector-app-debug-122:/layout/item_sas_emoji.xml"
     },
     {
+        "merged": "im.vector.application.vector-app-gplayDebug-121:/mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "im.vector.application.vector-app-main-125:/mipmap-hdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "im.vector.application.vector-app-gplayDebug-121:/mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "im.vector.application.vector-app-main-125:/mipmap-xxxhdpi/ic_launcher.webp"
+    },
+    {
         "merged": "/home/dk/.gradle/daemon/8.14.3/im.vector.application.vector-app-gplayDebug-121:/mipmap-xxxhdpi_ic_launcher_round.png.flat",
         "source": "/home/dk/.gradle/daemon/8.14.3/im.vector.application.vector-app-main-125:/mipmap-xxxhdpi/ic_launcher_round.png"
     },
@@ -144,6 +180,10 @@
         "source": "/home/dk/.gradle/daemon/8.14.3/im.vector.application.vector-app-gplayDebug-118:/raw/third_party_licenses"
     },
     {
+        "merged": "im.vector.application.vector-app-gplayDebug-121:/drawable_ic_launcher_foreground.xml.flat",
+        "source": "im.vector.application.vector-app-main-125:/drawable/ic_launcher_foreground.xml"
+    },
+    {
         "merged": "/home/dk/.gradle/daemon/8.14.3/im.vector.application.vector-app-gplayDebug-121:/drawable-hdpi_ic_launcher_foreground.png.flat",
         "source": "/home/dk/.gradle/daemon/8.14.3/im.vector.application.vector-app-gplay-115:/drawable-hdpi/ic_launcher_foreground.png"
     },
@@ -154,6 +194,10 @@
     {
         "merged": "/home/dk/.gradle/daemon/8.14.3/im.vector.application.vector-app-gplayDebug-121:/layout_fragment_debug_private_settings.xml.flat",
         "source": "/home/dk/.gradle/daemon/8.14.3/im.vector.application.vector-app-debug-122:/layout/fragment_debug_private_settings.xml"
+    },
+    {
+        "merged": "/home/dk/.gradle/daemon/8.14.3/im.vector.application.vector-app-gplayDebug-121:/drawable_ic_launcher_monochrome.xml.flat",
+        "source": "/home/dk/.gradle/daemon/8.14.3/im.vector.application.vector-app-main-125:/drawable/ic_launcher_monochrome.xml"
     },
     {
         "merged": "/home/dk/.gradle/daemon/8.14.3/im.vector.application.vector-app-gplayDebug-121:/mipmap-xhdpi_ic_launcher_round.png.flat",
@@ -194,5 +238,9 @@
     {
         "merged": "/home/dk/.gradle/daemon/8.14.3/im.vector.application.vector-app-gplayDebug-121:/mipmap-hdpi_ic_launcher_round.png.flat",
         "source": "/home/dk/.gradle/daemon/8.14.3/im.vector.application.vector-app-main-125:/mipmap-hdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "im.vector.application.vector-app-gplayDebug-121:/mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "im.vector.application.vector-app-main-125:/mipmap-mdpi/ic_launcher.webp"
     }
 ]
