@@ -1,0 +1,78 @@
+<resources>
+    <string name="analytics_opt_in_content">Palīdzi mums atrast nepilnības un uzlabot Tark Matrix daloties ar anonīmiem lietojuma datiem. Lai izprastu, kā cilvēki izmanto vairākas ierīces, mēs izveidosim nejaušu identifikatoru, ko kopīgo ierīces.
+\n
+\nVisus mūsu nosacījumus var izlasīt %s.</string>
+    <string name="analytics_opt_in_title">Palīdzēt uzlabot Tark Matrix</string>
+    <string name="app_desktop_web">Tark Matrix Web
+\nTark Matrix Desktop</string>
+    <string name="app_ios_android">Tark Matrix iOS
+\nTark Matrix Android</string>
+    <string name="call_failed_no_connection">Tark Matrix Zvans Neizdevās</string>
+    <string name="direct_room_encryption_enabled_waiting_users">Gaida lietotājus pievienojamies Tark Matrix</string>
+    <string name="direct_room_encryption_enabled_waiting_users_tile_description">Tiklīdz uzaicinātie lietotāji būs pievienojušies Tark Matrix, būs iespējams tērzēt, un istaba būs pilnībā šifrēta</string>
+    <string name="e2e_re_request_encryption_key_dialog_content">Lūgums palaist Tark Matrix citā ierīcē, kas var atšifrēt ziņu, lai tā varētu nosūtīt šīs sesijas atslēgas.</string>
+    <string name="ftue_auth_carousel_workplace_body">Tark Matrix ir lielisks arī darba vietā. Tam uzticas visdrošākās pasaules apvienības.</string>
+    <string name="home_empty_no_rooms_title">Laipni lūdzam Tark Matrix,
+\n%s!</string>
+    <string name="identity_server_error_bulk_sha256_not_supported">Privātuma nolūkos Tark Matrix nodrošina ar jaucējkodu slēptu lietotāja e-pasta adrešu un tālruņa numuru sūtīšanu.</string>
+    <string name="identity_server_error_outdated_identity_server">Šis identitāšu serveris ir novecojis. Tark Matrix nodrošina tikai API V2.</string>
+    <string name="initial_sync_request_content">Tark Matrix ir nepieciešams veikt kešatmiņas tīrīšanu, lai būtu pašreizēja, šī iemesla dēļ:
+\n%s
+\n
+\nJāņem vērā, ka šī darbība pārsāknēs lietotni, un tas var aizņemt kādu laiku.</string>
+    <string name="invite_friends_rich_title">&#128272;️ Pievienojies Tark Matrix</string>
+    <string name="invite_friends_text">Sazinieties ar mani izmantojot Tark Matrix: %s</string>
+    <string name="keys_backup_passphrase_not_empty_error_message">Lūgums izdzēst paroles vārdkopu, ja ir vēlams, lai Tark Matrix izveidotu atkopšanas atslēgu.</string>
+    <string name="legals_application_title">Tark Matrix nosacījumi</string>
+    <string name="link_this_email_with_your_account">%s iestatījumos, lai saņemtu uzaicinājumus tieši Tark Matrix.</string>
+    <string name="live_location_sharing_notification_title">Tark Matrix atrašanās vietas tiešraide</string>
+    <string name="location_not_available_dialog_content">Tark Matrix nevarēja piekļūt atrašanās vietai. Lūgums vēlāk mēģināt vēlreiz.</string>
+    <string name="location_not_available_dialog_title">Tark Matrix nevarēja piekļūt atrašanās vietai</string>
+    <string name="login_default_session_public_name">Tark Matrix Android</string>
+    <string name="onboarding_new_app_layout_welcome_message">Lai vienkāršotu Tark Matrix, cilnes tagad ir izvēles. Tās ir pārvaldāmas ar izvēlni augšējā labajā stūrī.</string>
+    <string name="permissions_rationale_msg_camera_and_audio">Tark Matrix nepieciešama atļauja piekļūt kamerai un mikrofonam, lai veiktu videozvanus.
+\n
+\nLūgums ļaut piekļuvi nākamajos uznirstošajos logos, lai nodrošinātu iespēju veikt zvanus.</string>
+    <string name="permissions_rationale_msg_notification">Tark Matrix ir nepieciešama atļauja attēlot paziņojumus. Tajos var tikt attēlotas ziņas, uzaicinājumi utt..
+\n
+\nLūgums atļaut piekļuvi nākamajos uznirstošajos logos, lai varētu skatīt paziņojumu.</string>
+    <string name="permissions_rationale_msg_record_audio">Tark Matrix-am nepieciešama atļauja piekļūt mikrofonam, lai nodrošinātu audio zvanus.</string>
+    <string name="preference_help_summary">Saņemt palīdzību Tark Matrix izmantošanā</string>
+    <string name="re_authentication_default_confirm_text">Tark Matrix pieprasa ievadīt piekļuves datus, lai veiktu šo darbību.</string>
+    <string name="rendering_event_error_exception">Tark Matrix saskārās ar problēmu, atveidojot notikuma ar id \'%1$s\' saturu</string>
+    <string name="rendering_event_error_type_of_event_not_handled">Tark Matrix neapstrādā \'%1$s\' tipa notikumus</string>
+    <string name="screen_sharing_notification_title">Tark Matrix ekrāna kopīgošana</string>
+    <string name="settings_background_fdroid_sync_mode_battery_description">Tark Matrix sinhronizēsies fonā tā, lai saudzētu ierīces ierobežotos resursus (bateriju).
+\nAtkarībā no ierīces resursu stāvokļa, operētājsistēma var atlikt sinhronizāciju.</string>
+    <string name="settings_background_fdroid_sync_mode_real_time_description">Tark Matrix ik brīdi sinhronizēsies fonā noteiktā laikā (pielāgojams).
+\nTas ietekmēs radio un baterijas izmantošanu, tiks attēlots pastāvīgs paziņojums, kas norādīs, ka Tark Matrix klausās notikumus.</string>
+    <string name="settings_call_ringtone_use_app_ringtone">Izmantot noklusējuma Tark Matrix zvana signālu ienākošajiem zvaniem</string>
+    <string name="settings_developer_mode_fail_fast_summary">Tark Matrix var biežāk avarēt, ja rodas neparedzēta kļūda</string>
+    <string name="settings_opt_in_of_analytics_summary">Tark Matrix apkopo anonīmu analītiku, lai ļautu mums uzlabot aplikāciju.</string>
+    <string name="settings_security_pin_code_grace_period_summary_off">PIN kods tiek pieprasīts katrā Tark Matrix atvēršanas reizē.</string>
+    <string name="settings_security_pin_code_grace_period_summary_on">PIN kods tiks pieprasīts pēc 2 minūšu Tark Matrix neizmantošanas.</string>
+    <string name="settings_security_pin_code_use_biometrics_summary_off">PIN kods ir vienīgais veids, kā atslēgt Tark Matrix.</string>
+    <string name="settings_troubleshoot_test_battery_success">Tark Matrix neietekmē akumulatora optimizācija.</string>
+    <string name="settings_troubleshoot_test_bg_restricted_failed">Fona ierobežojumi ir ieslēgti lietotnei Tark Matrix.
+\nDarbs, ko lietotne mēģina veikt, tiks agresīvi ierobežots, kamēr tā atrodas fonā, un tas var ietekmēt paziņojumus.
+\n%1$s</string>
+    <string name="settings_troubleshoot_test_bg_restricted_success">Fona ierobežojumi ir izslēgti priekš Tark Matrix. Šis tests jāveic, izmantojot mobilos datus (bez WIFI).
+\n%1$s</string>
+    <string name="settings_troubleshoot_test_device_settings_failed">Šai sesijai nav iespējoti paziņojumi.
+\nLūgums pārbaudīt Tark Matrix iestatījumus.</string>
+    <string name="settings_troubleshoot_test_fcm_failed_account_missing">[%1$s]
+\nŠī kļūda ir ārpus Tark Matrix ietekmes. Tālrunī nav Google konta. Lūgums atvērt kontu pārvaldnieku un pievienot Google kontu.</string>
+    <string name="settings_troubleshoot_test_fcm_failed_service_not_available">[%1$s]
+\nŠī kļūda ir ārpus Tark Matrix ietekmes. Tā var rasties vairāku iemeslu dēļ. Iespējams, tā darbosies, ja vēlāk tiks mēģināts vēlreiz, var arī pārbaudīt, vai sistēmas iestatījumos nav ierobežota Google Play pakalpojuma datu izmantošana, vai ierīces pulkstenis ir pareizs, vai arī tā var notikt pielāgotās sistēmās.</string>
+    <string name="settings_troubleshoot_test_fcm_failed_too_many_registration">[%1$s]
+\nŠī kļūda nav kontrolējama ar Tark Matrix, un saskaņā ar Google datiem šī kļūda norāda, ka ierīcē ir pārāk daudz lietotņu, kas reģistrētas FCM. Kļūda rodas tikai gadījumos, kad ir ārkārtīgi liels lietotņu skaits, tāpēc šim nevajadzētu ietekmēt parastu lietotāju.</string>
+    <string name="settings_troubleshoot_test_play_services_failed">Tark Matrix izmanto Google Play pakalpojumus, lai piegādātu pašpiegādes ziņas, bet tas nešķiet pareizi konfigurēts:
+\n%1$s</string>
+    <string name="settings_troubleshoot_test_service_boot_failed">Pakalpojums nesāks darboties, kad ierīce tiks pārsāknēta. Kamēr Tark Matrix netiks atvērta vismaz vienreiz, netiks saņemti paziņojumi.</string>
+    <string name="settings_troubleshoot_test_system_settings_permission_failed">Tark Matrix ir nepieciešama atļauja, lai parādītu paziņojumus.
+\nLūgums piešķirt atļauju.</string>
+    <string name="soft_logout_sso_not_same_user_error">Pašreizējā sesija ir lietotājam %1$s, un tiek sniegti lietotāja %2$s pieteikšanās dati. Tark Matrix to nenodrošina.
+\nLūgums vispirms notīrīt datus un pēc tam pieteikties vēlreiz citā kontā.</string>
+    <string name="use_latest_app">Izmantojiet jaunāko Tark Matrix citās savās ierīcēs:</string>
+    <string name="use_other_session_content_description">Izmantojiet jaunāko Tark Matrix citās savās ierīcēs, Tark Matrix Web, Tark Matrix Desktop, Tark Matrix iOS, Tark Matrix Android, vai kādu citu Matrix lietotni ar cross-signing atbalstu</string>
+</resources>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="analytics_opt_in_content">Pomozte nám identifikovat problémy a vylepšit Tark Matrix sdílením anonymních údajů o používání. Abychom pochopili, jak lidé používají více zařízení, vygenerujeme náhodný identifikátor sdílený vašimi zařízeními.
+\n
+\nMůžete si přečíst všechny naše podmínky %s.</string>
+    <string name="analytics_opt_in_title">Pomozte vylepšit Tark Matrix</string>
+    <string name="app_desktop_web">Tark Matrix Web
+\nTark Matrix Desktop</string>
+    <string name="app_ios_android">Tark Matrix iOS
+\nTark Matrix Android</string>
+    <string name="call_failed_no_connection">Volání Tark Matrixu se nezdařilo</string>
+    <string name="direct_room_encryption_enabled_waiting_users">Čekání na uživatele, než se připojí do Tark Matrix</string>
+    <string name="direct_room_encryption_enabled_waiting_users_tile_description">Jakmile se pozvaní uživatelé připojí do aplikace Tark Matrix, budete moci komunikovat a místnost bude koncově šifrovaná</string>
+    <string name="e2e_re_request_encryption_key_dialog_content">Prosím, spusťte Tark Matrix na jiném zařízení, které může dešifrovat zprávu, aby poslalo klíče této relaci.</string>
+    <string name="ftue_auth_carousel_workplace_body">Tark Matrix se skvěle hodí i na pracoviště. Aplikaci důvěřují nejlépe zabezpečené organizace na světě.</string>
+    <string name="home_empty_no_rooms_title">Vítejte v aplikaci Tark Matrix,
+\n%s.</string>
+    <string name="identity_server_error_bulk_sha256_not_supported">Pro Vaše soukromí, Tark Matrix podporuje jen odesílání hašovaných emailových adress a telefonních čísel.</string>
+    <string name="identity_server_error_outdated_identity_server">Tento server identit je zastaralý. Tark Matrix podporuje jen API V2.</string>
+    <string name="initial_sync_request_content">Tark Matrix potřebuje vymazat mezipaměť, aby byla aktuální, a to z následujícího důvodu:
+\n%s
+\n
+\nTato akce povede k restartování aplikace a může trvat nějakou dobu.</string>
+    <string name="invite_friends_rich_title">🔐️ Přidej se ke mně v Tark Matrixu</string>
+    <string name="invite_friends_text">Ahoj, pojď si povídat v Tark Matrixu: %s</string>
+    <string name="keys_backup_passphrase_not_empty_error_message">Prosím, smažte přístupovou frázi, přejete-li si, aby Tark Matrix generoval klíč pro obnovu.</string>
+    <string name="legals_application_title">Zásady aplikace Tark Matrix</string>
+    <string name="link_this_email_with_your_account">%s v Nastavení pro příjem pozvánek přímo v Tark Matrixu.</string>
+    <string name="live_location_sharing_notification_title">Tark Matrix poloha živě</string>
+    <string name="location_not_available_dialog_content">Tark Matrix nemohl získat přístup k vaší poloze. Zkuste to prosím později.</string>
+    <string name="location_not_available_dialog_title">Tark Matrix nemohl získat přístup k vaší poloze</string>
+    <string name="login_default_session_public_name">Tark Matrix Android</string>
+    <string name="onboarding_new_app_layout_welcome_message">Pro zjednodušení aplikace Tark Matrix jsou nyní karty nepovinné. Spravujte je pomocí nabídky vpravo nahoře.</string>
+    <string name="permissions_rationale_msg_camera_and_audio">Tark Matrix potřebuje oprávnění pro přístup k vaší kameře a mikrofonu pro uskutečnění video hovoru.
+\n
+\nProsím, povolte přístup na následující hlášce abyste mohli uskutečnit hovor.</string>
+    <string name="permissions_rationale_msg_notification">Tark Matrix potřebuje oprávnění k zobrazování oznámení. Oznámení mohou zobrazovat vaše zprávy, pozvánky atd.
+\n
+\nPro zobrazování oznámení povolte přístup na dalších vyskakovacích oknech.</string>
+    <string name="permissions_rationale_msg_record_audio">Tark Matrix potřebuje oprávnění pro přístup k vašemu mikrofonu pro uskutečnění hlasových hovorů.</string>
+    <string name="preference_help_summary">Získejte pomoc při používání Tark Matrixu</string>
+    <string name="re_authentication_default_confirm_text">Tark Matrix vyžaduje zadání přihlašovacích údajů k provedení této akce.</string>
+    <string name="rendering_event_error_exception">Tark Matrix narazil na chybu při převádění obsahu události s id \'%1$s\'</string>
+    <string name="rendering_event_error_type_of_event_not_handled">Tark Matrix neobstarává události typu \'%1$s\'</string>
+    <string name="screen_sharing_notification_title">Sdílení obrazovky aplikace Tark Matrix</string>
+    <string name="settings_background_fdroid_sync_mode_battery_description">Tark Matrix bude synchronizovat na pozadí způsobem, který šetří omezené zdroje zařízení (baterii).
+\nV závislosti na stavu zdrojů zařízení může být sync operačním systémem odložen.</string>
+    <string name="settings_background_fdroid_sync_mode_real_time_description">Tark Matrix bude synchronizovat na pozadí periodicky v přesný čas (nastavitelné).
+\nTo bude mít vliv na využití rádia a baterie, stálé oznámení o tom, že Tark Matrix čeká na události, bude zobrazeno.</string>
+    <string name="settings_call_ringtone_use_app_ringtone">Použít původní vyzvánění Tark Matrixu pro příchozí hovory</string>
+    <string name="settings_developer_mode_fail_fast_summary">Tark Matrix může spadnout častěji, když se objeví neočekávané chyby</string>
+    <string name="settings_opt_in_of_analytics_summary">Tark Matrix sbírá anonymní analytická data pro vylepšení aplikace.</string>
+    <string name="settings_security_pin_code_grace_period_summary_off">Kód PIN se vyžaduje při každém otevření Tark Matrixu.</string>
+    <string name="settings_security_pin_code_grace_period_summary_on">Kód PIN se vyžaduje, pokud se Tark Matrix nepoužil 2 minuty.</string>
+    <string name="settings_security_pin_code_use_biometrics_summary_off">Kód PIN je jediný způsob, jak odemknout Tark Matrix.</string>
+    <string name="settings_troubleshoot_test_battery_success">Optimalizace baterie nemá na Tark Matrix vliv.</string>
+    <string name="settings_troubleshoot_test_bg_restricted_failed">Omezení na pozadí jsou pro Tark Matrix zapnuta.
+\nČinnosti prováděné aplikací budou agresivně omezeny, bude-li v pozadí, a to může mít vliv na oznámení.
+\n%1$s</string>
+    <string name="settings_troubleshoot_test_bg_restricted_success">Omezení na pozadí jsou pro Tark Matrix vypnuta. Tento test by měl běžet s mobilními daty (ne WIFI).
+\n%1$s</string>
+    <string name="settings_troubleshoot_test_device_settings_failed">Oznámení nejsou zapnuta pro tuto relaci.
+\nProsím, prověřte nastavení Tark Matrixu.</string>
+    <string name="settings_troubleshoot_test_fcm_failed_account_missing">[%1$s]
+\nTato chyba je mimo kontrolu Tark Matrixu. V telefonu není žádný účet Google. Prosím, spusťte správce účtů a doplňte účet Google.</string>
+    <string name="settings_troubleshoot_test_fcm_failed_service_not_available">[%1$s]
+\nTato chyba je mimo kontrolu Tark Matrixu. Múže k ní dojít z několika důvodů. Snad bude fungovat, když zkusíte znovu později, můžete též zkontrolovat, zda Google Play Service nejsou omezeny v množství dat v systémových nastavení nebo zda hodiny zařízení jdou správné nebo k chybě může dojít na zvláštní ROM.</string>
+    <string name="settings_troubleshoot_test_fcm_failed_too_many_registration">[%1$s]
+\nTato chyba je mimo kontrolu Tark Matrixu a podle Googlu indikuje, že zařízení má příliš mnoho aplikací registrovaných s FCM. Tato chyba se ukáže jen v případech extrémního množství aplikací, a proto by neměla mít vliv na normálního uživatele.</string>
+    <string name="settings_troubleshoot_test_play_services_failed">Tark Matrix používá Google Play Services pro doručení zpráv push, ale patrně nejsou správně nastaveny:
+\n%1$s</string>
+    <string name="settings_troubleshoot_test_service_boot_failed">Služba se nespustí při startu zařízení, neobdržíte oznámení, dokud jednou neotevřete Tark Matrix.</string>
+    <string name="settings_troubleshoot_test_system_settings_permission_failed">Tark Matrix potřebuje oprávnění k zobrazování oznámení.
+\nUdělte prosím toto oprávnění.</string>
+    <string name="soft_logout_sso_not_same_user_error">Tato relace je pro uživatele %1$s a Vy jste zadali údaje pro uživatele %2$s. Tark Matrix toto nepodporuje.
+\nProsím, nejdříve vyčistěte data a pak se přihlaste k jinému účtu.</string>
+    <string name="use_latest_app">Použijte na svých zařízeních nejnovější Tark Matrix:</string>
+    <string name="use_other_session_content_description">Použijte na svých zařízeních nejnovější Tark Matrix, Tark Matrix Web, Tark Matrix Desktop, Tark Matrix iOS, Tark Matrix pro Android nebo jiný Matrix klient schopný křížového podepisování</string>
+</resources>

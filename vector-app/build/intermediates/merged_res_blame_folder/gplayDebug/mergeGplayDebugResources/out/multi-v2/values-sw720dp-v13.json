@@ -1,0 +1,19 @@
+{
+    "logs": [
+        {
+            "outputFile": "im.vector.application.vector-app-mergeGplayDebugResources-119:/values-sw720dp-v13/values-sw720dp-v13.xml",
+            "map": [
+                {
+                    "source": "/home/dk/Desktop/repos/TarkAndroidX/library/ui-styles/build/intermediates/packaged_res/debug/packageDebugResources/values-sw720dp-v13/values-sw720dp-v13.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "43",
+                        "endOffsets": "94"
+                    }
+                }
+            ]
+        }
+    ]
+}

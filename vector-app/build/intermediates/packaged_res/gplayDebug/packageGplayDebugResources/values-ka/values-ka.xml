@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="analytics_opt_in_content">დაგვეხმარეთ პრობლემების იდენტიფიცირებასა და Tark Matrix-ის გაუმჯობესებაში ანონიმური გამოყენების მონაცემების გაზიარებით. იმის გასაგებად, თუ როგორ იყენებენ ადამიანები მრავალ მოწყობილობას, ჩვენ გენერირებას გავაკეთებთ შემთხვევითი იდენტიფიკატორის, რომელსაც თქვენს მოწყობილობებთან გავაზიარებთ. 
+\n
+\nშეგიძლიათ წაიკითხოთ ჩვენი პირობები სრულად %s.</string>
+    <string name="analytics_opt_in_title">დაეხმარეთ Tark Matrix-ს გაუმჯობესებაში</string>
+    <string name="app_desktop_web">Tark Matrix Web
+\nTark Matrix Desktop</string>
+    <string name="app_ios_android">Tark Matrix iOS
+\nTark Matrix Android</string>
+    <string name="call_failed_no_connection">Tark Matrix ზარის წარუმატებლობა</string>
+    <string name="direct_room_encryption_enabled_waiting_users">მომხმარებლების Tark Matrix შეუერთების მოლოდინში</string>
+    <string name="direct_room_encryption_enabled_waiting_users_tile_description">როგორც კი მოწვეული მომხმარებლები Tark Matrix-ს შეუერთდებიან, თქვენ შეძლებთ ჩეთის დაწყებას და ოთახი ბოლომდე დაშიფრული იქნება</string>
+    <string name="e2e_re_request_encryption_key_dialog_content">გთხოვთ, გახსნათ Tark Matrix სხვა მოწყობილობაზე, რომელსაც შეუძლია გაშიფროს ეს შეტყობინება, რათა გააგზავნოს გასაღებები ამ სესიაზე.</string>
+    <string name="ftue_auth_carousel_workplace_body">Tark Matrix ასევე შესანიშნავია სამუშაო ადგილისთვის. მას ენდობიან მსოფლიოს ყველაზე უსაფრთხო ორგანიზაციები.</string>
+    <string name="home_empty_no_rooms_title">კეთილი იყოს თქვენი მობრძანება Tark Matrix-ში,
+\n %s.</string>
+    <string name="identity_server_error_bulk_sha256_not_supported">თქვენი კონფიდენციალურობისთვის, Tark Matrix მხარს უჭერს მხოლოდ დაშიფრული მომხმარებლის ელფოსტის მისამართების და ტელეფონის ნომრების გაგზავნას.</string>
+    <string name="identity_server_error_outdated_identity_server">ეს იდენტობის სერვერი მოძველებულია. Tark Matrix მხარს უჭერს მხოლოდ API V2-ს.</string>
+    <string name="initial_sync_request_content">Tark Matrix საჭიროებს ქეშის გასუფთავებას, რომ იყოს განახლებული, შემდეგი მიზეზის გამო:
+\n%s 
+\n
+\nგაითვალისწინეთ, რომ ეს მოქმედება გადატვირთავს აპლიკაციას და შესაძლოა ამას დრო დასჭირდეს.</string>
+    <string name="invite_friends_rich_title">🔐️ შემომიერთდი Tark Matrix-ზე</string>
+    <string name="invite_friends_text">გამარჯობა, მესაუბრე Tark Matrix-ზე: %s</string>
+    <string name="keys_backup_passphrase_not_empty_error_message">გთხოვთ წაშალოთ პაროლფრაზა, თუ გსურთ, რომ Tark Matrix-მა შექმნას აღდგენის გასაღები.</string>
+    <string name="legals_application_title">Tark Matrix პოლიტიკა</string>
+    <string name="link_this_email_with_your_account">%s პარამეტრებში, რათა მიიღოთ მოწვევები პირდაპირ Tark Matrix-ში.</string>
+    <string name="live_location_sharing_notification_title">Tark Matrix ცოცხალი ადგილმდებარეობა</string>
+    <string name="location_not_available_dialog_content">Tark Matrix-მა ვერ მოიპოვა თქვენი ადგილმდებარეობა. გთხოვთ, სცადოთ მოგვიანებით.</string>
+    <string name="location_not_available_dialog_title">Tark Matrix-მა ვერ მოიპოვა თქვენი ადგილმდებარეობა</string>
+    <string name="login_default_session_public_name">Tark Matrix Android</string>
+    <string name="onboarding_new_app_layout_welcome_message">იმისათვის, რომ Tark Matrix გამარტივდეს, ახლა ჩანართები არ არის სავალდებულო. მართეთ ისინი მარჯვენა ზედა მენიუს გამოყენებით.</string>
+    <string name="permissions_rationale_msg_camera_and_audio">Tark Matrix საჭიროებს ნებართვას კამერისა და მიკროფონის წვდომაზე, რათა შეასრულოს ვიდეო ზარები. 
+\n
+\nგთხოვთ, ნებართვა მიაწოდოთ შემდეგ ფანჯრებში, რათა ზარი მოხდეს.</string>
+    <string name="permissions_rationale_msg_notification">Tark Matrix საჭიროებს ნებართვას შეტყობინებების ჩვენებაზე. შეტყობინებები შეიძლება აჩვენოს თქვენი შეტყობინებები, თქვენი მოწვევები და ა.შ. 
+\n
+\nგთხოვთ, მიაწოდოთ ნებართვა შემდეგ ფანჯრებში, რათა შეტყობინება ნახოთ.</string>
+    <string name="permissions_rationale_msg_record_audio">Tark Matrix საჭიროებს ნებართვას მიკროფონის წვდომაზე, რათა შეასრულოს აუდიო ზარები.</string>
+    <string name="preference_help_summary">დახმარების მიღება Tark Matrix-ის გამოყენებაში</string>
+    <string name="re_authentication_default_confirm_text">Tark Matrix მოითხოვს თქვენი სერთიფიკატების შეყვანას ამ მოქმედების შესასრულებლად.</string>
+    <string name="rendering_event_error_exception">Tark Matrix წააწყდა პრობლემას, როცა შეეცადა შინაარსის ჩვენებას, რომლის ID არის \'%1$s\'</string>
+    <string name="rendering_event_error_type_of_event_not_handled">Tark Matrix ვერ ამუშავებს ტიპის \'%1$s\' მოვლენებს</string>
+    <string name="screen_sharing_notification_title">Tark Matrix ეკრანის გაზიარება</string>
+    <string name="settings_background_fdroid_sync_mode_battery_description">Tark Matrix სინქრონიზირდება ფონის რეჟიმში ისე, რომ ინარჩუნებს მოწყობილობის შეზღუდულ რესურსებს (ბატარეა). 
+\nმოწყობილობის რესურსების მდგომარეობის მიხედვით, სინქრონიზაცია შეიძლება გადაიდოს ოპერაციული სისტემის მიერ.</string>
+    <string name="settings_background_fdroid_sync_mode_real_time_description">Tark Matrix პერიოდულად სინქრონიზირდება ფონის რეჟიმში კონკრეტულ დროს (კონფიგურირებადია). 
+\nეს გავლენას მოახდენს რადიოსა და ბატარეის მოხმარებაზე, იქნება მუდმივი შეტყობინება, რომელიც აღნიშნავს, რომ Tark Matrix უსმენს მოვლენებს.</string>
+    <string name="settings_call_ringtone_use_app_ringtone">გამოიყენეთ Tark Matrix ნაგულისხმევი ზარის რინგტონი შემომავალი ზარებისთვის</string>
+    <string name="settings_developer_mode_fail_fast_summary">Tark Matrix შეიძლება უფრო ხშირად გაითიშოს, როდესაც წარმოუდგენელი შეცდომა ხდება</string>
+    <string name="settings_opt_in_of_analytics_summary">Tark Matrix აგროვებს ანონიმურ ანალიტიკურ მონაცემებს აპლიკაციის გასაუმჯობესებლად.</string>
+    <string name="settings_security_pin_code_grace_period_summary_off">PIN კოდი საჭიროა ყოველ ჯერზე, როცა გახსნით Tark Matrix-ს.</string>
+    <string name="settings_security_pin_code_grace_period_summary_on">PIN კოდი საჭიროა Tark Matrix-ის 2 წუთის მანძილზე გამოუყენებლობის შემდეგ.</string>
+    <string name="settings_security_pin_code_use_biometrics_summary_off">PIN კოდი არის ერთადერთი გზა Tark Matrix-ის განბლოკვისთვის.</string>
+    <string name="settings_troubleshoot_test_battery_success">Tark Matrix არ მოქმედებს ბატარეის ოპტიმიზაციით.</string>
+    <string name="settings_troubleshoot_test_bg_restricted_failed">ფონის შეზღუდვები ჩართულია Tark Matrix-ისთვის. 
+\nაპლიკაცია, რომელიც აპლიკაცია ცდილობს გააკეთოს, აგრესიულად შეიზღუდება ფონის რეჟიმში ყოფნისას და ეს შეიძლება გავლენა იქონიოს შეტყობინებებზე.
+\n%1$s</string>
+    <string name="settings_troubleshoot_test_bg_restricted_success">ფონის შეზღუდვები გამორთულია Tark Matrix-ისთვის. ეს ტესტი უნდა ჩატარდეს მობილური მონაცემების გამოყენებით (WIFI-ის გარეშე).
+\n%1$s</string>
+    <string name="settings_troubleshoot_test_device_settings_failed">შეტყობინებები არ არის ჩართული ამ სესიისთვის. 
+\nგთხოვთ, შეამოწმოთ Tark Matrix პარამეტრები.</string>
+    <string name="settings_troubleshoot_test_fcm_failed_account_missing">[%1$s]
+\nეს შეცდომა Tark Matrix-ის კონტროლიდან არის გამოსული. ტელეფონზე არ არის Google ანგარიში. გთხოვთ, გახსნათ ანგარიშის მენეჯერი და დაამატოთ Google ანგარიში.</string>
+    <string name="settings_troubleshoot_test_fcm_failed_service_not_available">[%1$s]
+\nეს შეცდომა Tark Matrix-ის კონტროლიდან არის გამოსული. ეს შეიძლება მოხდეს რამდენიმე მიზეზის გამო. შესაძლოა იმუშავოს, თუ ხელახლა სცადავთ მოგვიანებით, შეგიძლიათ ასევე შეამოწმოთ, რომ Google Play სერვისი არ არის შეზღუდული მონაცემთა გამოყენებაში სისტემის პარამეტრებში, ან რომ თქვენი მოწყობილობის საათი სწორია, ან ეს შეიძლება მოხდეს მორგებულ ROM-ზე.</string>
+    <string name="settings_troubleshoot_test_fcm_failed_too_many_registration">[%1$s]
+\nეს შეცდომა Tark Matrix-ის კონტროლიდან არის გამოსული და Google-ის მიხედვით, ეს შეცდომა მიუთითებს, რომ მოწყობილობას აქვს ძალიან ბევრი აპლიკაცია რეგისტრირებული FCM-თან. შეცდომა მხოლოდ მაშინ ხდება, როდესაც აპლიკაციების რაოდენობა ძალიან დიდია, ამიტომ ეს არ უნდა იმოქმედოს საშუალო მომხმარებელზე.</string>
+    <string name="settings_troubleshoot_test_play_services_failed">Tark Matrix იყენებს Google Play სერვისებს შეტყობინებების მიწოდებისთვის, მაგრამ როგორც ჩანს არასწორად არის კონფიგურირებული:
+\n%1$s</string>
+    <string name="settings_troubleshoot_test_service_boot_failed">სერვისი არ დაიწყება, როდესაც მოწყობილობა გადაიტვირთება, თქვენ არ მიიღებთ შეტყობინებებს, სანამ Tark Matrix ერთხელ არ გაიხსნება.</string>
+    <string name="settings_troubleshoot_test_system_settings_permission_failed">Tark Matrix საჭიროებს ნებართვას შეტყობინებების ჩვენებისთვის. 
+\nგთხოვთ, მიაწოდოთ ნებართვა.</string>
+    <string name="soft_logout_sso_not_same_user_error">მიმდინარე სესია არის მომხმარებლისთვის %1$s და თქვენ შეიყვანეთ %2$s მონაცემები. ეს არ არის მხარდაჭერილი Tark Matrix
+\n-ის მიერ. გთხოვთ, ჯერ გაასუფთავოთ მონაცემები, შემდეგ კი ხელახლა შეხვიდეთ სხვა ანგარიშზე.</string>
+    <string name="use_latest_app">გამოიყენეთ უახლესი Tark Matrix თქვენს სხვა მოწყობილობებზე:</string>
+    <string name="use_other_session_content_description">გამოიყენეთ უახლესი Tark Matrix თქვენს სხვა მოწყობილობებზე, Tark Matrix Web, Tark Matrix Desktop, Tark Matrix iOS, Tark Matrix Android, ან სხვა ჯვარედინი ხელმოწერის ფუნქციონალური Matrix კლიენტი</string>
+</resources>

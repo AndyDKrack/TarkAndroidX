@@ -1,0 +1,74 @@
+<resources>
+    <string name="analytics_opt_in_content">Ayúdanos a identificar problemas y a mejorar Tark Matrix compartiendo datos de uso anónimos. Para comprender como las personas usan múltiples dispositivos, generaremos un identificador aleatorio, compartido por tus dispositivos.
+\n
+\nPuedes leer todos nuestros términos en %s.</string>
+    <string name="analytics_opt_in_title">Ayudar a mejorar Tark Matrix</string>
+    <string name="app_desktop_web">Tark Matrix Web
+\nTark Matrix de escritorio</string>
+    <string name="app_ios_android">Tark Matrix iOS
+\nTark Matrix Android</string>
+    <string name="call_failed_no_connection">Tark Matrix Fallo la Llamada</string>
+    <string name="e2e_re_request_encryption_key_dialog_content">Por favor, inicia Tark Matrix en otro dispositivo que pueda descifrar el mensaje para que pueda enviar las claves a esta sesión.</string>
+    <string name="ftue_auth_carousel_workplace_body">Tark Matrix también es estupenda para el trabajo. Es confiada por las organizaciones más seguras del mundo.</string>
+    <string name="home_empty_no_rooms_title">Bienvenido a Tark Matrix,
+\n%s.</string>
+    <string name="identity_server_error_bulk_sha256_not_supported">Para su privacidad, Tark Matrix solo admite el envío de números de teléfono y correos electrónicos de usuario con hash.</string>
+    <string name="identity_server_error_outdated_identity_server">Servidor de identidad desactualizado. Tark Matrix solo soporta API V2.</string>
+    <string name="initial_sync_request_content">Tark Matrix necesita realizar una limpieza de caché para mantenerse actualizado por la siguiente razón:
+\n%s
+\n
+\nTen en cuenta que esta acción reiniciará la aplicación y podría tardar algo de tiempo.</string>
+    <string name="invite_friends_rich_title">&#128272;️ Unirme a Tark Matrix</string>
+    <string name="invite_friends_text">Hey, contactame por Tark Matrix:%s</string>
+    <string name="keys_backup_passphrase_not_empty_error_message">Por favor borra la contraseña si quieres que Tark Matrix genere una clave de recuperación.</string>
+    <string name="legals_application_title">Política de Tark Matrix</string>
+    <string name="link_this_email_with_your_account">%s en Configuración para recibir invitaciones directamente en Tark Matrix.</string>
+    <string name="live_location_sharing_notification_title">Tark Matrix Ubicación en directo</string>
+    <string name="location_not_available_dialog_content">Tark Matrix no ha podido acceder a tu ubicación. Por favor, inténtalo de nuevo más tarde.</string>
+    <string name="location_not_available_dialog_title">Tark Matrix no ha podido acceder a tu ubicación</string>
+    <string name="login_default_session_public_name">Tark Matrix Android</string>
+    <string name="onboarding_new_app_layout_welcome_message">Para simplificar Tark Matrix, las pestañas son opcionales. Gestiónalas usando el menú en la esquina superior derecha.</string>
+    <string name="permissions_rationale_msg_camera_and_audio">Tark Matrix necesita permiso para acceder a tu cámara y micrófono para realizar llamadas de vídeo.
+\n
+\nPor favor permite el acceso en las próximas ventanas emergentes para poder realizar la llamada.</string>
+    <string name="permissions_rationale_msg_notification">Tark Matrix necesita permiso para mostrar notificaciones. Las notificaciones pueden mostrar tus mensajes, invitaciones, etc.
+\n
+\nPor favor, a continuacion, en las ventanas emergentes, permite el acceso para poder visualizar notificaciones.</string>
+    <string name="permissions_rationale_msg_record_audio">Tark Matrix necesita permiso para acceder a tu micrófono para realizar llamadas de voz.</string>
+    <string name="preference_help_summary">Obtén ayuda sobre cómo usar Tark Matrix</string>
+    <string name="re_authentication_default_confirm_text">Tark Matrix requiere que ingrese sus credenciales para realizar esta acción.</string>
+    <string name="rendering_event_error_exception">Tark Matrix encontró un problema al representar el contenido del evento con el ID \'%1$s\'</string>
+    <string name="rendering_event_error_type_of_event_not_handled">Tark Matrix no maneja eventos de tipo \'%1$s\'</string>
+    <string name="screen_sharing_notification_title">Tark Matrix Compartición de pantalla</string>
+    <string name="settings_background_fdroid_sync_mode_battery_description">Tark Matrix se sincronizará en segundo plano de manera que se preserven los recursos del dispositivo (batería).
+\nDependiendo del estado de los recursos del dispositivo, la sincronización puede ser aplazada por el sistema operativo.</string>
+    <string name="settings_background_fdroid_sync_mode_real_time_description">Tark Matrix se sincronizará en segundo plano periódicamente en un momento preciso (configurable).
+\nEsto afectará al uso de la radio y la batería, se mostrará una notificación permanente que indica que Tark Matrix está escuchando a nuevos acontecimientos.</string>
+    <string name="settings_call_ringtone_use_app_ringtone">Usar el tono de llamada normal de Tark Matrix para llamadas entrantes</string>
+    <string name="settings_developer_mode_fail_fast_summary">Tark Matrix puede fallar con más frecuencia cuando ocurre un error inesperado</string>
+    <string name="settings_opt_in_of_analytics_summary">Tark Matrix recopila análisis de estadísticas anónimas para permitirnos mejorar la aplicación.</string>
+    <string name="settings_security_pin_code_grace_period_summary_off">PIN es requerido cada vez que se abre Tark Matrix.</string>
+    <string name="settings_security_pin_code_grace_period_summary_on">PIN es necesario después de no usar Tark Matrix por 2 minutos.</string>
+    <string name="settings_security_pin_code_use_biometrics_summary_off">Tark Matrix sólo puede ser desbloqueado vía Código PIN.</string>
+    <string name="settings_troubleshoot_test_battery_success">A Tark Matrix no le afecta la Optimización de la bateria.</string>
+    <string name="settings_troubleshoot_test_bg_restricted_failed">Las restricciones de segundo plano están activadas para Tark Matrix.
+\nLa app estará completamente restringida mientras esté en segundo plano y esto podría afectar a las notificaciones.
+\n%1$s</string>
+    <string name="settings_troubleshoot_test_bg_restricted_success">Las restricciones de segundo plano están desactivadas para Tark Matrix. Este debería funcionar con datos móviles (sin WIFI).
+\n%1$s</string>
+    <string name="settings_troubleshoot_test_device_settings_failed">Las notificaciones no están habilitadas para esta sesión.
+\nPor favor comprueba los ajustes Tark Matrix.</string>
+    <string name="settings_troubleshoot_test_fcm_failed_account_missing">[%1$s]
+\nEste error esta fuera del control de Tark Matrix. No hay cuenta de googled registrada en este dispositivo. Por favor abre el gestor dde cuentas y añade una cuenta de Google.</string>
+    <string name="settings_troubleshoot_test_fcm_failed_service_not_available">[%1$s]\nEste error esta fuera del control de Tark Matrix. Puede ocurrir por numerosas razones. Probablemente funcione si vuelve a intentarlo mas tarde. También puede comprobar si los Servicios de Google Play están limitados por los ajustes del sistema o si la hora del dispositivo es correcta o si puede pasar en ROM personalizada.</string>
+    <string name="settings_troubleshoot_test_fcm_failed_too_many_registration">[%1$s]\nEste error esta fuera del control de Tark Matrix y de acuerdo con Google, este error indica que el dispositivo tiene demasiadas apps registradas con FCM. Este error solo ocurre cuando existe un numero demasiado alto de apps por lo que no deberia afectar a un usuario promedio.</string>
+    <string name="settings_troubleshoot_test_play_services_failed">Tark Matrix usa los servicios de Google Play para entregar mensajes Push pero no parece estar configurado correctamente:
+\n%1$s</string>
+    <string name="settings_troubleshoot_test_service_boot_failed">El servicio no se iniciará al reiniciar el dispositivo, no recibirá notificaciones hasta que Tark Matrix haya sido abierto al menos 1 vez.</string>
+    <string name="settings_troubleshoot_test_system_settings_permission_failed">Tark Matrix necesita permiso para mostrar notificaciones.
+\nPor favor, otórgalo.</string>
+    <string name="soft_logout_sso_not_same_user_error">La sesión actual es para el usuario %1$s y usted proporciona las credenciales para el usuario %2$s. Esto no está suportado por Tark Matrix.
+\nPrimero borra los datos, luego inicia sesión nuevamente con otra cuenta.</string>
+    <string name="use_latest_app">Utilice la última versión de Tark Matrix en sus otros dispositivos:</string>
+    <string name="use_other_session_content_description">Utilice la última versión de Tark Matrix en sus otros dispositivos, Tark Matrix Web, Tark Matrix Desktop, Tark Matrix iOS, Tark Matrix para Android u otro cliente Matrix con capacidad de firma cruzada</string>
+</resources>

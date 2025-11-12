@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="analytics_opt_in_content">匿名分享使用資料能幫我們辨識錯誤和改善 Tark Matrix。為了瞭解使用者如何使用多種裝置，我們會隨機產生能夠辨識您裝置的辨識碼。
+\n
+\n您可以在 %s 閱讀我們的服務條款。</string>
+    <string name="analytics_opt_in_title">協助改善 Tark Matrix</string>
+    <string name="app_desktop_web">Tark Matrix 網頁版
+\nTark Matrix 桌面版</string>
+    <string name="app_ios_android">Tark Matrix iOS
+\nTark Matrix Android</string>
+    <string name="call_failed_no_connection">無法 Tark Matrix 呼叫</string>
+    <string name="direct_room_encryption_enabled_waiting_users">正在等待使用者加入 Tark Matrix</string>
+    <string name="direct_room_encryption_enabled_waiting_users_tile_description">受邀使用者加入 Tark Matrix 後，您就可以聊天，聊天室將進行端對端加密</string>
+    <string name="e2e_re_request_encryption_key_dialog_content">請在另一個可以解密訊息的裝置上啟動 Tark Matrix，以便它將金鑰傳送到此工作階段。</string>
+    <string name="ftue_auth_carousel_workplace_body">Tark Matrix 也很適合用在工作場合。許多最重視安全的組織也使用此軟體。</string>
+    <string name="home_empty_no_rooms_title">歡迎使用 Tark Matrix，
+\n%s。</string>
+    <string name="identity_server_error_bulk_sha256_not_supported">為了保護您的隱私，Tark Matrix 僅支援傳送雜湊過的使用者電子郵件地址與電話號碼。</string>
+    <string name="identity_server_error_outdated_identity_server">此身分伺服器太舊了。Tark Matrix 僅支援 API V2。</string>
+    <string name="initial_sync_request_content">Tark Matrix 需要清除快取以保持最新狀態，原因如下：
+\n%s
+\n
+\n注意：此動作會重新啟動應用程式，可能需要一些時間。</string>
+    <string name="invite_friends_rich_title">🔐️ 在 Tark Matrix 上加入我</string>
+    <string name="invite_friends_text">嗨，和我在 Tark Matrix 上聊天吧：%s</string>
+    <string name="keys_backup_passphrase_not_empty_error_message">如果您想要讓 Tark Matrix 產生復原金鑰的話，請刪除安全密語。</string>
+    <string name="legals_application_title">Tark Matrix 政策</string>
+    <string name="link_this_email_with_your_account">在設定%s，即可直接在 Tark Matrix 中接收邀請。</string>
+    <string name="live_location_sharing_notification_title">Tark Matrix 即時位置</string>
+    <string name="location_not_available_dialog_content">Tark Matrix 無法存取您的位置。請稍後再試。</string>
+    <string name="location_not_available_dialog_title">Tark Matrix 無法存取您的位置</string>
+    <string name="login_default_session_public_name">Tark Matrix Android</string>
+    <string name="onboarding_new_app_layout_welcome_message">為了簡化您的 Tark Matrix，現在不一定需要使用分頁標籤。可使用右上角的選單進行管理。</string>
+    <string name="permissions_rationale_msg_camera_and_audio">Tark Matrix 需要相機及麥克風存取權限來撥打視訊通話。
+\n
+\n請在下個彈跳視窗中允許存取，才能正常撥打。</string>
+    <string name="permissions_rationale_msg_notification">Tark Matrix 需要權限才能顯示通知。將在通知中顯示您收到的訊息、邀請等等。
+\n
+\n請在下個彈跳視窗中允許存取，才能檢視通知。</string>
+    <string name="permissions_rationale_msg_record_audio">Tark Matrix 需要麥克風存取權限來撥打語音通話。</string>
+    <string name="preference_help_summary">取得關於使用 Tark Matrix 的說明</string>
+    <string name="re_authentication_default_confirm_text">Tark Matrix 需要您輸入登入資訊來執行此動作。</string>
+    <string name="rendering_event_error_exception">Tark Matrix 在渲染 ID 為「%1$s」的事件內容時遇到問題</string>
+    <string name="rendering_event_error_type_of_event_not_handled">Tark Matrix 無法處理類型為「%1$s」的事件</string>
+    <string name="screen_sharing_notification_title">Tark Matrix 分享畫面中</string>
+    <string name="settings_background_fdroid_sync_mode_battery_description">Tark Matrix 將會在背景同步以節省裝置的電力資源。
+\n取決於您裝置的資源狀態，作業系統可能會延遲同步。</string>
+    <string name="settings_background_fdroid_sync_mode_real_time_description">Tark Matrix 將會精準地定期在背景同步（可設定）。
+\n這會影響到網路與電池的使用，並會顯示指出 Tark Matrix 正在監聽某事件的永久通知。</string>
+    <string name="settings_call_ringtone_use_app_ringtone">為來電使用預設的 Tark Matrix 鈴聲</string>
+    <string name="settings_developer_mode_fail_fast_summary">發生非預期的錯誤時，更主動讓 Tark Matrix 當掉，以捕捉錯誤資訊</string>
+    <string name="settings_opt_in_of_analytics_summary">Tark Matrix 會收集匿名分析資訊，讓我們可改進此應用程式。</string>
+    <string name="settings_security_pin_code_grace_period_summary_off">每次打開 Tark Matrix 時都需要 PIN 碼。</string>
+    <string name="settings_security_pin_code_grace_period_summary_on">未使用 Tark Matrix 2 分鐘後，要求輸入 PIN 碼。</string>
+    <string name="settings_security_pin_code_use_biometrics_summary_off">PIN 碼是解鎖 Tark Matrix 的唯一方式。</string>
+    <string name="settings_troubleshoot_test_battery_success">Tark Matrix 不會被電池最佳化影響。</string>
+    <string name="settings_troubleshoot_test_bg_restricted_failed">背景限制已為 Tark Matrix 啟用。
+\n應用程式要在背景執行的工作將被嚴格限制，這可能會影響通知功能。
+\n %1$s</string>
+    <string name="settings_troubleshoot_test_bg_restricted_success">背景限制已為 Tark Matrix 停用。本測試應該使用行動數據執行（不是 WiFi）。
+\n%1$s</string>
+    <string name="settings_troubleshoot_test_device_settings_failed">此工作階段未啟用通知。
+\n請確認 Tark Matrix 設定。</string>
+    <string name="settings_troubleshoot_test_fcm_failed_account_missing">[%1$s]
+\n這個錯誤並非 Tark Matrix 所能控制。手機上沒有 Google 帳號。請開啟帳號管理員並新增一個 Google 帳號。</string>
+    <string name="settings_troubleshoot_test_fcm_failed_service_not_available">[%1$s]
+\n這個錯誤並非 Tark Matrix 所能控制。可能由多種原因所導致。可能稍後再試一次就可以運作，您也可以在系統設定檢查 Google Play Service 有沒有被限制使用網路連線、您裝置的時間是否正確，或也可能會在自訂的 ROM 上發生。</string>
+    <string name="settings_troubleshoot_test_fcm_failed_too_many_registration">[%1$s]
+\n這個錯誤並非 Tark Matrix 所能控制，而是與 Google 有關，這個錯誤代表裝置註冊了太多使用 FCM 的應用程式。這個錯誤只會發生在有超大量的應用程式的裝置上，所以不應該影響一般的使用者。</string>
+    <string name="settings_troubleshoot_test_play_services_failed">Tark Matrix 使用 Google Play Services 來傳遞推送訊息，但它似乎並未正確設定：
+\n%1$s</string>
+    <string name="settings_troubleshoot_test_service_boot_failed">服務不會在裝置重開時自行啟動，沒有再次開啟 Tark Matrix 前不會收到通知。</string>
+    <string name="settings_troubleshoot_test_system_settings_permission_failed">Tark Matrix 需要權限以顯示通知。
+\n請授予權限。</string>
+    <string name="soft_logout_sso_not_same_user_error">目前工作階段登入的使用者 %1$s 與您提供的使用者 %2$s 的登入資訊不同。Tark Matrix 不支援此差異。
+\n請先清除資料，然後再以其他帳號登入。</string>
+    <string name="use_latest_app">在您的其他裝置上使用最新的 Tark Matrix：</string>
+    <string name="use_other_session_content_description">在您的其他裝置上使用最新的 Tark Matrix、Tark Matrix 網頁版、Tark Matrix 桌面版、Tark Matrix iOS、Tark Matrix for Android 或其他有交叉簽署功能的 Matrix 客戶端</string>
+</resources>

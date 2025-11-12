@@ -1,0 +1,77 @@
+<resources>
+    <string name="analytics_opt_in_content">Segítsen észrevennünk a hibákat, és jobbá tenni a(z) Tark Matrix alkalmazást a névtelen használati adatok küldése által. Ahhoz, hogy megértsük, hogyan használnak a felhasználók egyszerre több eszközt, egy véletlenszerű azonosítót állítunk elő, ami az eszközei között meg lesz osztva.
+\n
+\nElolvashatja a feltételeinket %s.</string>
+    <string name="analytics_opt_in_title">Segítsen a(z) Tark Matrix alkalmazást jobbá tenni</string>
+    <string name="app_desktop_web">Tark Matrix Web
+\nTark Matrix Desktop</string>
+    <string name="app_ios_android">Tark Matrix iOS
+\nTark Matrix Android</string>
+    <string name="call_failed_no_connection">Tark Matrix hívás sikertelen</string>
+    <string name="direct_room_encryption_enabled_waiting_users">Tark Matrix alkalmazáshoz csatlakozó emberekre várakozás</string>
+    <string name="direct_room_encryption_enabled_waiting_users_tile_description">Miután a meghívott felhasználók csatlakoztak a(z) Tark Matrix alkalmazáshoz, beszélhetsz velük és a szoba végpontok között titkosítva lesz</string>
+    <string name="e2e_re_request_encryption_key_dialog_content">Índítsa el a(z) Tark Matrix alkalmazást egy olyan eszközön, amely vissza tudja fejteni az üzenetet, hogy elküldhesse a kulcsot ennek a munkamenetnek.</string>
+    <string name="ftue_auth_carousel_workplace_body">Tark Matrix megállja a helyét a munkahelyen is. A világ legbiztonságosabb szervezetei bíznak meg benne.</string>
+    <string name="home_empty_no_rooms_title">Üdv itt: Tark Matrix!
+\n%s.</string>
+    <string name="identity_server_error_bulk_sha256_not_supported">A biztonságod érdekében Tark Matrix csak hash-selt e-mail cím és telefonszám küldését támogatja.</string>
+    <string name="identity_server_error_outdated_identity_server">Ez az azonosító-kiszolgáló elavult. Tark Matrix csak az API V2-t támogatja.</string>
+    <string name="initial_sync_request_content">A(z) Tark Matrix alkalmazásnak az alábbi okokból törölnie kell a gyorsítótárat:
+\n%s
+\n
+\nMegjegyzés: ez az alkalmazást is újraindítja, ami eltarthat egy darabig.</string>
+    <string name="invite_friends_rich_title">&#128272;️ Csatlakozz hozzám Tark Matrix-en</string>
+    <string name="invite_friends_text">Hey, beszélgessünk Tark Matrix-en: %s</string>
+    <string name="keys_backup_passphrase_not_empty_error_message">Ha azt szeretnéd, hogy a Tark Matrix Visszaállítási Kulcsot generáljon akkor kérlek töröld a jelmondatot.</string>
+    <string name="legals_application_title">A(z) Tark Matrix alkalmazás házirendje</string>
+    <string name="link_this_email_with_your_account">%s a Beállításokba a közvetlen meghívások fogadásához az Tark Matrix.</string>
+    <string name="live_location_sharing_notification_title">Tark Matrix Folyamatos helymeghatározás</string>
+    <string name="location_not_available_dialog_content">Az Tark Matrix nem fér hozzá a tartózkodási helyedhez. Próbáld újra később.</string>
+    <string name="location_not_available_dialog_title">Az Tark Matrix nem tudott hozzáférni a tartózkodási helyedhez</string>
+    <string name="login_default_session_public_name">Tark Matrix Android</string>
+    <string name="onboarding_new_app_layout_welcome_message">Tark Matrix egyszerűsítéséhez a lapok mostantól választhatók. Beállítani a jobb felső menüből lehet.</string>
+    <string name="permissions_rationale_msg_camera_and_audio">A(z) Tark Matrix alkalmazásnak engedélyre van szüksége a mikrofon és a kamera eléréséhez, hogy videohívást tudjon indítani.
+\n
+\nEngedélyezze a hozzáférést a következő felugró ablakban, hogy hívást tudjon indítani.</string>
+    <string name="permissions_rationale_msg_notification">A(z) Tark Matrix alkalmazásnak engedélyre van szüksége az értesítések megjelenítéséhez. Az értesítés megjelenítheti az üzenetet, meghívót, stb.
+\n
+\nEngedélyezze a hozzáférést a következő felugró ablakban, hogy az értesítések megjelenhessenek.</string>
+    <string name="permissions_rationale_msg_record_audio">A(z) Tark Matrix alkalmazásnak engedélyre van szüksége a mikrofon eléréséhez, hogy hanghívást tudjon indítani.</string>
+    <string name="preference_help_summary">Segítség az Tark Matrix használatában</string>
+    <string name="re_authentication_default_confirm_text">A művelet elvégzéséhez Tark Matrix kéri, hogy adja meg az azonosításhoz az adatokat.</string>
+    <string name="rendering_event_error_exception">Tark Matrix problémába ütközött az esemény (azon: %1$s) megjelenítésekor</string>
+    <string name="rendering_event_error_type_of_event_not_handled">Tark Matrix nem kezeli ezt az eseményt: \'%1$s\'</string>
+    <string name="screen_sharing_notification_title">Tark Matrix képernyő megosztás</string>
+    <string name="settings_background_fdroid_sync_mode_battery_description">A(z) Tark Matrix alkalmazás a háttérben úgy szinkronizál, hogy a leginkább kímélje az eszköz korlátozott erőforrásait (akkumulátor).
+\nAz eszköz erőforrásainak állapotától függően a szinkronizációt az operációs rendszer elhalaszthatja.</string>
+    <string name="settings_background_fdroid_sync_mode_real_time_description">A(z) Tark Matrix alkalmazás a háttérben rendszeresen, pontosan a megadott időközönként, szinkronizálni fog (beállítható).
+\nEz befolyásolja a rádió és az akkumulátor használatot, és folyamatosan egy értesítés fog megjelenni arról, hogy a(z) Tark Matrix alkalmazás figyeli a neki küldött eseményeket.</string>
+    <string name="settings_call_ringtone_use_app_ringtone">Az alapértelmezett Tark Matrix csengőhang használata bejövő hívásokhoz</string>
+    <string name="settings_developer_mode_fail_fast_summary">Tark Matrix a nem várt hibák esetén többször fog összeomlani</string>
+    <string name="settings_opt_in_of_analytics_summary">A(z) Tark Matrix alkalmazás névtelen analitikai adatokat gyűjt, hogy javítani tudjuk az alkalmazást.</string>
+    <string name="settings_security_pin_code_grace_period_summary_off">Tark Matrix megnyitásához mindig PIN kód szükséges.</string>
+    <string name="settings_security_pin_code_grace_period_summary_on">Ha 2 percnél hosszabb ideig nem használod az Tark Matrix Element alkalmazást, PIN kódot fog kérni.</string>
+    <string name="settings_security_pin_code_use_biometrics_summary_off">Az Tark Matrix feloldása csak PIN kóddal lehetséges.</string>
+    <string name="settings_troubleshoot_test_battery_success">A(z) Tark Matrix alkalmazást nem érinti az akkumulátor-optimalizáció.</string>
+    <string name="settings_troubleshoot_test_bg_restricted_failed">Háttér-korlátozások engedélyezve vannak a(z) Tark Matrix alkalmazáshoz.
+\nBármi amit a(z) Tark Matrix alkalmazás el akar végezni amíg a háttérben fut, agresszívan korlátozva van. Ez érintheti az értesítéseket is.
+\n%1$s</string>
+    <string name="settings_troubleshoot_test_bg_restricted_success">A háttér-korlátozások le vannak tiltva a(z) Tark Matrix alkalmazáshoz. Ezt a tesztet mobil hálózaton kell elvégezni (Wi-Fi nélkül).
+\n%1$s</string>
+    <string name="settings_troubleshoot_test_device_settings_failed">Az értesítések tiltva vannak ehhez a munkamenethez. Ellenőrizze a(z) Tark Matrix alkalmazás beállításait.</string>
+    <string name="settings_troubleshoot_test_fcm_failed_account_missing">[%1$s]
+\nEz a hiba a(z) Tark Matrix alkalmazástól független. Nincs Google fiók az eszközön. Nyissa meg a fiókkezelőt és adjon hozzá egy Google fiókot.</string>
+    <string name="settings_troubleshoot_test_fcm_failed_service_not_available">[%1$s]
+\nEz a hiba a(z) Tark Matrix alkalmazástól független. Több okból is előjöhet. Lehet, ha később próbálja már működni fog, de megnézheti, hogy a Google Play szolgáltatásnak nincs-e beállítva adathasználati korlátozás a rendszerbeállításokban vagy, hogy az eszközének órája helyesen jár-e, de ez előfordulhat egyedi ROM használata esetén is.</string>
+    <string name="settings_troubleshoot_test_fcm_failed_too_many_registration">[%1$s]
+\nEz a hiba a(z) Tark Matrix alkalmazástól független és a Google szerint ez a hiba azt jelzi, hogy túl sok alkalmazás használja az FCM-et. Ez a hiba akkor szokott előfordulni, ha nagyon sok alkalmazás van ezért egy átlagos felhasználót nem nagyon érinthet.</string>
+    <string name="settings_troubleshoot_test_play_services_failed">A(z) Tark Matrix alkalmazás a Google Play szolgáltatásokat használja a „push” értesítések fogadásához, de úgy tűnik az nincs megfelelően beállítva:
+\n%1$s</string>
+    <string name="settings_troubleshoot_test_service_boot_failed">A szolgáltatás az eszköz újraindulásakor nem fog elindulni, addig nem kapsz értesítést amíg egyszer el nem indítod a Tark Matrix-ot.</string>
+    <string name="settings_troubleshoot_test_system_settings_permission_failed">A(z) Tark Matrix alkalmazásnak az értesítések megjelenítéséhez engedélyre van szüksége.
+\nAdja meg az engedélyt.</string>
+    <string name="soft_logout_sso_not_same_user_error">A jelenlegi munkamenet %1$s felhasználóhoz tartozik és %2$s azonosítási adatait adta meg. Ez nem támogatott a következőben: Tark Matrix.
+\nElőször törölje az adatokat, utána lépjen be újra egy másik fiókba.</string>
+    <string name="use_latest_app">Az Tark Matrix legújabb kliensét használd a többi eszközödön:</string>
+    <string name="use_other_session_content_description">Használd a legújabb Tark Matrixet a többi eszközödön, azaz az Tark Matrix Webet, az Tark Matrix Desktopot, az Tark Matrix for Androidot vagy más eszközök közötti hitelesítést támogató  Matrix-klienst</string>
+</resources>

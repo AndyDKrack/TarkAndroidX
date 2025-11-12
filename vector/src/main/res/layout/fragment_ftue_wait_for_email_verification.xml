@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/ftueAuthGutterStart"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="@dimen/ftue_auth_gutter_start_percent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/ftueAuthGutterEnd"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="@dimen/ftue_auth_gutter_end_percent" />
+
+    <View
+        android:id="@+id/waitForEmailGradientContainer"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintHeight_percent="0.60"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:background="@drawable/bg_gradient_ftue_breaker" />
+
+    <Space
+        android:id="@+id/waitForEmailSpace1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/waitForEmailLogo"
+        app:layout_constraintHeight_percent="0.10"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="spread_inside" />
+
+    <ImageView
+        android:id="@+id/waitForEmailLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:adjustViewBounds="true"
+        android:background="@drawable/circle"
+        android:backgroundTint="?colorSecondary"
+        android:importantForAccessibility="no"
+        android:src="@drawable/ic_email"
+        app:layout_constraintBottom_toTopOf="@+id/waitForEmailSpace2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.12"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/waitForEmailSpace1" />
+
+    <Space
+        android:id="@+id/waitForEmailSpace2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/waitForEmailTitle"
+        app:layout_constraintHeight_percent="0.05"
+        app:layout_constraintTop_toBottomOf="@+id/waitForEmailLogo" />
+
+    <TextView
+        android:id="@+id/waitForEmailTitle"
+        style="@style/Widget.Vector.TextView.Title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/ftue_auth_email_verification_title"
+        android:transitionName="loginTitleTransition"
+        app:layout_constraintBottom_toTopOf="@+id/waitForEmailSubtitle"
+        app:layout_constraintEnd_toEndOf="@id/ftueAuthGutterEnd"
+        app:layout_constraintStart_toStartOf="@id/ftueAuthGutterStart"
+        app:layout_constraintTop_toBottomOf="@+id/waitForEmailSpace2" />
+
+    <TextView
+        android:id="@+id/waitForEmailSubtitle"
+        style="@style/Widget.Vector.TextView.Subtitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="@string/ftue_auth_email_verification_subtitle"
+        app:layout_constraintBottom_toTopOf="@+id/waitForEmailSpace4"
+        app:layout_constraintEnd_toEndOf="@id/ftueAuthGutterEnd"
+        app:layout_constraintStart_toStartOf="@id/ftueAuthGutterStart"
+        app:layout_constraintTop_toBottomOf="@+id/waitForEmailTitle" />
+
+    <Space
+        android:id="@+id/waitForEmailSpace4"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/waitForEmailButton"
+        app:layout_constraintTop_toBottomOf="@+id/waitForEmailSubtitle" />
+
+    <Button
+        android:id="@+id/waitForEmailButton"
+        style="@style/Widget.Vector.Button.Login"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/login_set_email_submit"
+        android:textAllCaps="true"
+        app:layout_constraintBottom_toTopOf="@+id/waitForEmailResendEmail"
+        app:layout_constraintEnd_toEndOf="@id/ftueAuthGutterEnd"
+        app:layout_constraintStart_toStartOf="@id/ftueAuthGutterStart"
+        app:layout_constraintTop_toBottomOf="@+id/waitForEmailSpace4" />
+
+    <Button
+        android:id="@+id/waitForEmailResendEmail"
+        style="@style/Widget.Vector.Button.Text.Login"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/tark_background_light"
+        android:text="@string/ftue_auth_email_resend_email"
+        android:textAllCaps="true"
+        android:textColor="?colorSecondary"
+        android:transitionName="loginSubmitTransition"
+        app:layout_constraintBottom_toTopOf="@+id/waitForEmailSpace5"
+        app:layout_constraintEnd_toEndOf="@id/ftueAuthGutterEnd"
+        app:layout_constraintStart_toStartOf="@id/ftueAuthGutterStart"
+        app:layout_constraintTop_toBottomOf="@+id/waitForEmailButton" />
+
+    <Space
+        android:id="@+id/waitForEmailSpace5"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHeight_percent="0.05"
+        app:layout_constraintTop_toBottomOf="@+id/waitForEmailResendEmail" />
+
+    <im.vector.app.core.ui.views.CompatKonfetti
+        android:id="@+id/viewKonfetti"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="initial_sync_request_content">Tark Matrix aşağıdakı səbəbə görə:
+\n%s 
+\n
+\nGüncəl olmaq üçün təmiz keşi yerinə yetirməlidir.
+\nNəzərə alın ki, bu əməliyyat tətbiqi yenidən işə salacaq və bir az vaxt apara bilər.</string>
+</resources>

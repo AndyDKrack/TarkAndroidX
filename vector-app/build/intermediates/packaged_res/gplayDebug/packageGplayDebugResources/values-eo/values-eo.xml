@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="analytics_opt_in_content">Helpu nin identigi problemojn kaj plibonigi Tark Matrix dividante anonimajn uzdatumojn. Por kompreni kiel homoj uzas plurajn aparatojn, ni generos hazardan identigilon, kunhavitan de viaj aparatoj.
+\n
+\n Vi povas legi ĉiujn niajn kondiĉojn %s.</string>
+    <string name="analytics_opt_in_title">Helpi plibonigi Tark Matrix</string>
+    <string name="app_desktop_web">Tark Matrix Web (por TTT)
+\nTark Matrix Desktop (por labortablo)</string>
+    <string name="app_ios_android">Tark Matrix iOS
+\nTark Matrix Android</string>
+    <string name="call_failed_no_connection">Malsukcesis voko de Tark Matrix</string>
+    <string name="e2e_re_request_encryption_key_dialog_content">Bonvolu ruli Tark Matrix sur alia aparato kiu scipovas malĉifri la mesaĝon, por ke ĝi povu sendi la ŝlosilojn al ĉi tiu salutaĵo.</string>
+    <string name="identity_server_error_bulk_sha256_not_supported">Pro via privateco, Tark Matrix nur subtenas sendadon de haketitaj retpoŝtadresoj kaj telefonnumeroj.</string>
+    <string name="identity_server_error_outdated_identity_server">Ĉi tiu identiga servilo estas eksdata. Tark Matrix suportas nur version 2 de la API.</string>
+    <string name="initial_sync_request_content">Tark Matrix devas fari klaran kaŝmemoron por esti ĝisdatigita, pro la sekva kialo:
+\n%s
+\n
+\nNotu, ke ĉi tiu ago rekomencos la apon kaj ĝi eble daŭros iom da tempo.</string>
+    <string name="invite_friends_rich_title">🔐️ Aliĝu al mi per Tark Matrix</string>
+    <string name="invite_friends_text">Saluton, parolu kun mi per Tark Matrix: %s</string>
+    <string name="keys_backup_passphrase_not_empty_error_message">Bonvolu forigi la pasfrazon se vi volas, ke Tark Matrix estigu novan rehavan ŝlosilon.</string>
+    <string name="legals_application_title">Tark Matrix politiko</string>
+    <string name="live_location_sharing_notification_title">Tark Matrix Tuja Loko</string>
+    <string name="login_default_session_public_name">Tark Matrix por Android</string>
+    <string name="permissions_rationale_msg_camera_and_audio">Tark Matrix bezonas premeson aliri viajn filmilon kaj mikrofonon por fari vidvokojn.
+\n 
+\nBonvolu permesi aliron per la sekva ŝprucpeto, por ebligi la vokon.</string>
+    <string name="permissions_rationale_msg_record_audio">Tark Matrix bezonas permeson aliri vian mikrofonon por fari voĉvokojn.</string>
+    <string name="preference_help_summary">Ricevu helpon pri uzado de Tark Matrix</string>
+    <string name="re_authentication_default_confirm_text">Tark Matrix postulas enigon de viaj salutiloj por tiu ĉi ago.</string>
+    <string name="rendering_event_error_exception">Tark Matrix renkontis problemon bildigante enhavon de okazo kun la identigilo «%1$s»</string>
+    <string name="rendering_event_error_type_of_event_not_handled">Tark Matrix ne traktas okazojn de speco «%1$s»</string>
+    <string name="settings_background_fdroid_sync_mode_battery_description">Tark Matrix spegulos fone, per maniero konservanta la limigitajn rimedojn de la aparato (ĉefe la baterion).
+\nDepende de la stato de la rimedoj de via aparato, la spegulado povus esti prokrastita de la operaciumo.</string>
+    <string name="settings_background_fdroid_sync_mode_real_time_description">Tark Matrix spegulos fone, ripete, je preciza tempo (agordebla).
+\nĈi tio influos uzadon de baterio kaj radiilo, kaj aperigos ĉiaman sciigon pri tio, ke Tark Matrix aŭskultas okazojn.</string>
+    <string name="settings_call_ringtone_use_app_ringtone">Uzi implicitan sonoron de Tark Matrix por envenaj vokoj</string>
+    <string name="settings_developer_mode_fail_fast_summary">Tark Matrix povas fiaski pli ofte kiam okazas neatendita eraro</string>
+    <string name="settings_opt_in_of_analytics_summary">Tark Matrix kolektas sennomajn analizojn por helpi al ni plibonigi la aplikaĵon.</string>
+    <string name="settings_security_pin_code_grace_period_summary_off">Persona identiga numero estas postulata je ĉiu malfermo de Tark Matrix.</string>
+    <string name="settings_security_pin_code_grace_period_summary_on">Persona identiga numero estas postulata post 2 minutoj de neuzado de Tark Matrix.</string>
+    <string name="settings_security_pin_code_use_biometrics_summary_off">La persona identiga numero estas la sola maniero malŝlosi Tark Matrix.</string>
+    <string name="settings_troubleshoot_test_battery_success">Optimumigo de baterio ne influas sur Tark Matrix.</string>
+    <string name="settings_troubleshoot_test_bg_restricted_failed">Fonaj limigoj estas ŝaltitaj por Tark Matrix.
+\nAgado de la aplikaĵo estos akre limigita dum ĝi estas fone, kaj tio povus influi sciigojn.
+\n%1$s</string>
+    <string name="settings_troubleshoot_test_bg_restricted_success">Fonaj limigoj estas malŝaltitaj por Tark Matrix. Ĉi tiu testo devus esti rulata kun telefonaj datumoj (ne kun Vifio).
+\n%1$s</string>
+    <string name="settings_troubleshoot_test_device_settings_failed">Sciigoj ne estas ŝaltitaj por ĉi tiu salutaĵo.
+\nBonvolu kontroli la agordojn de Tark Matrix.</string>
+    <string name="settings_troubleshoot_test_fcm_failed_account_missing">[%1$s]
+\nTiu ĉi eraro ne dependas de Tark Matrix. La telefono ne havas konton de Google. Bonvolu malfermi la administrilon de kontoj kaj aldoni konton de Google.</string>
+    <string name="settings_troubleshoot_test_fcm_failed_service_not_available">[%1$s]
+\nTiu ĉi eraro ne dependas de Tark Matrix. Ĝi povas okazi pro kelkaj kialoj. Eble ĝi funkcios se vi reprovos poste. Vi ankaŭ povas kontroli, ĉu la servo de Google Play ne estas datume limigita en la sistemaj agordoj, aŭ ĉu la horloĝo de via aparato ĝuste funkcias, aŭ ĉu ĝi ne okazas sur propra ROM.</string>
+    <string name="settings_troubleshoot_test_fcm_failed_too_many_registration">[%1$s]
+\nTiu ĉi eraro ne dependas de Tark Matrix, kaj laŭ Google ĝi indikas, ke la aparato havas tro multajn aplikaĵojn registritajn je FCM. La eraro nur okazas kiam multegaj aplikaĵoj estas samtempe instalitaj, kaj ne devus koncerni ordinaran uzanton.</string>
+    <string name="settings_troubleshoot_test_play_services_failed">Tark Matrix uzas la servojn de Google Play por liveri pasivajn mesaĝojn, sed ili ne ŝajnas ĝuste agorditaj:
+\n%1$s</string>
+    <string name="settings_troubleshoot_test_service_boot_failed">La servo ne ekos kiam la aparato reekos, kaj vi ne ricevos sciigojn ĝis vi mem Tark Matrix malfermos.</string>
+    <string name="settings_troubleshoot_test_system_settings_permission_failed">Tark Matrix bezonas la permeson por montri sciigojn.
+\nBonvolu doni la permeson.</string>
+    <string name="soft_logout_sso_not_same_user_error">Ĉi tiu salutaĵo estas por uzanto %1$s kaj vi donas salutilojn por uzanto %2$s. Tark Matrix ne subtenas tion.
+\nBonvolu unue vakigi datumojn, kaj poste saluti alian konton.</string>
+    <string name="use_latest_app">Uzu la plej freŝan version de Tark Matrix per aliaj viaj aparatoj:</string>
+    <string name="use_other_session_content_description">Uzu la plej freŝan Tark Matrix per aliaj viaj aparatoj: Tark Matrix Web, Tark Matrix Desktop, Tark Matrix iOS, Tark Matrix por Android, aŭ alian klienton de Matrix kapablan je delegaj subskriboj</string>
+</resources>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="analytics_opt_in_content">Giúp chúng tôi xác định các vấn đề và cải thiện Tark Matrix bằng cách chia sẻ dữ liệu sử dụng ẩn danh. Để hiểu cách mọi người sử dụng nhiều thiết bị, chúng tôi sẽ tạo ra một mã định danh ngẫu nhiên, được chia sẻ bởi các thiết bị của bạn.
+\n
+\nBạn có thể đọc tất cả các thuật ngữ của chúng tôi %s.</string>
+    <string name="analytics_opt_in_title">Giúp cải thiện Tark Matrix</string>
+    <string name="app_desktop_web">Tark Matrix Web
+\nTark Matrix Desktop</string>
+    <string name="app_ios_android">Tark Matrix iOS
+\nTark Matrix Android</string>
+    <string name="call_failed_no_connection">Cuộc gọi Tark Matrix thất bại</string>
+    <string name="e2e_re_request_encryption_key_dialog_content">Vui lòng khởi chạy Tark Matrix trên một thiết bị khác mà có thể giải mã tin nhắn để nó có thể gửi các mã khoá vào phiên làm việc này.</string>
+    <string name="ftue_auth_carousel_workplace_body">Tark Matrix cũng là nơi tốt cho nơi làm việc. Được tin cậy bởi những tổ chức bảo mật nhất thế giới.</string>
+    <string name="identity_server_error_bulk_sha256_not_supported">Để đảm bảo quyền riêng tư cho bạn, Tark Matrix chỉ hỗ trợ gửi địa chỉ thư điện tử và số điện thoại của người dùng khi đã được băm.</string>
+    <string name="identity_server_error_outdated_identity_server">Máy chủ định danh này đã lỗi thời. Tark Matrix chỉ hỗ trợ API V2.</string>
+    <string name="initial_sync_request_content">Tark Matrix cần xóa bộ nhớ đệm để cập nhật, do:
+\n%s
+\n
+\nỨng dụng sẽ khởi động lại và có thể mất thời gian.</string>
+    <string name="invite_friends_rich_title">🔐️ Tham gia với tôi trên Tark Matrix</string>
+    <string name="invite_friends_text">Hey, nói chuyện với tôi trên Tark Matrix: %s</string>
+    <string name="keys_backup_passphrase_not_empty_error_message">Vui lòng xóa cụm mật khẩu nếu bạn muốn Tark Matrix để tạo khóa khôi phục.</string>
+    <string name="legals_application_title">Chính sách Tark Matrix</string>
+    <string name="link_this_email_with_your_account">%s trong Cài đặt để nhận lời mời trực tiếp trong Tark Matrix.</string>
+    <string name="login_default_session_public_name">Tark Matrix Android</string>
+    <string name="permissions_rationale_msg_camera_and_audio">Tark Matrix cần quyền truy cập máy ảnh và micro của bạn để thực hiện các cuộc gọi video.
+\n
+\nVui lòng cho phép quyền truy cập trên các cửa sổ popup tiếp theo để có thể thực hiện cuộc gọi.</string>
+    <string name="permissions_rationale_msg_notification">Tark Matrix cần được cấp quyền để hiển thị thông báo. Thông báo có thể hiển thị tin nhắn, lời mời, v.v .
+\n
+\nHãy đồng ý ở cửa sổ bật lên tiếp theo để có thể hiển thị thông báo.</string>
+    <string name="permissions_rationale_msg_record_audio">Tark Matrix cần quyền truy cập micro của bạn để thực hiện các cuộc gọi âm thanh.</string>
+    <string name="preference_help_summary">Nhận trợ giúp về việc sử dụng Tark Matrix</string>
+    <string name="re_authentication_default_confirm_text">Tark Matrix yêu cầu bạn nhập thông tin của bạn để thực hiện hành động này.</string>
+    <string name="rendering_event_error_exception">Tark Matrix gặp sự cố khi hiển thị nội dung sự kiện với id \'%1$s\'</string>
+    <string name="rendering_event_error_type_of_event_not_handled">Tark Matrix không xử lý các sự kiện thuộc loại \'%1$s\'</string>
+    <string name="settings_background_fdroid_sync_mode_battery_description">Tark Matrix sẽ đồng bộ dưới nền và sẽ sử dụng các tài nguyên như pin một cách tiết kiệm.
+\nTùy vào các tài nguyên có sẵn trên thiết bị, việc đồng bộ hóa có thể sẽ bị ngăn cản bởi hệ điều hành.</string>
+    <string name="settings_background_fdroid_sync_mode_real_time_description">Tark Matrix sẽ đồng bộ hóa dưới nền trong một khoảng thời gian nhất định (có thể điều chỉnh thời gian).
+\nViệc này sẽ làm ảnh hưởng tới khả năng thu phát và sử dụng pin, sẽ xuất hiện một thông báo cho biết lúc nào Tark Matrix đang hoạt động.</string>
+    <string name="settings_call_ringtone_use_app_ringtone">Dùng nhạc chuông mặc định cho cuộc gọi đến</string>
+    <string name="settings_developer_mode_fail_fast_summary">Tark Matrix có thể gặp sự cố thường xuyên hơn khi một lỗi bất ngờ xảy ra</string>
+    <string name="settings_opt_in_of_analytics_summary">Tark Matrix thu thập dữ liệu khuyết danh để giúp chúng tôi cải thiện app.</string>
+    <string name="settings_security_pin_code_grace_period_summary_off">Mã PIN được yêu cầu mỗi khi bạn mở Tark Matrix.</string>
+    <string name="settings_security_pin_code_grace_period_summary_on">Mã PIN được yêu cầu sau 2 phút không sử dụng Tark Matrix.</string>
+    <string name="settings_security_pin_code_use_biometrics_summary_off">Mã PIN là cách duy nhất để mở khóa Tark Matrix.</string>
+    <string name="settings_troubleshoot_test_battery_success">Tark Matrix không bị ảnh hưởng bởi Trình tối ưu pin.</string>
+    <string name="settings_troubleshoot_test_bg_restricted_failed">Giới hạn dưới nền đã được bật cho Tark Matrix.
+\nCác hoạt động của ứng dụng sẽ bị giới hạn nặng nề khi chạy dưới nền, điều này có thể ảnh hưởng đến cách thông báo của ứng dụng.
+\n%1$s</string>
+    <string name="settings_troubleshoot_test_bg_restricted_success">Các giới hạn dưới nền đã được tắt cho Tark Matrix. Bài kiểm tra này sẽ được chạy khi sử dụng dữ liệu di động (không Wi-Fi).
+\n%1$s</string>
+    <string name="settings_troubleshoot_test_device_settings_failed">Thông báo không được bật cho phiên này.
+\nVui lòng kiểm tra trong thiết lập ứng dụng Tark Matrix.</string>
+    <string name="settings_troubleshoot_test_fcm_failed_account_missing">[%1$s
+\nLỗi này đã vượt khỏi tầm kiểm soát của Tark Matrix. Không phát hiện thấy tài khoản Google trên thiết bị. Vui lòng thêm một tài khoản.</string>
+    <string name="settings_troubleshoot_test_fcm_failed_service_not_available">[%1$s
+\nLỗi này đã vượt ra khỏi tầm kiểm soát của Tark Matrix. Nó có thể xảy ra vì vài lý do. Có thể nó sẽ hoạt động nếu bạn thử lại sau, bạn cũng có thể kiểm rằng các dịch vụ của Google Play không bị giới hạn quyền sử dụng data trong cài đặt hệ thống, hoặc đồng hồ trên thiết bị của bạn bị sai, hoặc là do bản ROM custom của bạn.</string>
+    <string name="settings_troubleshoot_test_fcm_failed_too_many_registration">[%1$s
+\nLỗi này đã vượt ra khỏi tầm kiểm soát của Tark Matrix và theo như Google thông báo, lỗi này chỉ ra rằng thiết bị đã có quá nhiều ứng dụng được đăng ký với FCM. Lỗi này chỉ xảy ra khi có quá nhiều ứng dụng hoạt động, vì vậy có thể sẽ không ảnh hưởng đến trải nghiệm người dùng cơ bản.</string>
+    <string name="settings_troubleshoot_test_play_services_failed">Tark Matrix sử dụng Dịch vụ của Google Play nhằm đưa ra cái thông báo đẩy nhưng có vẻ nó đã không được căn chỉnh đúng cách:
+\n%1$s</string>
+    <string name="settings_troubleshoot_test_service_boot_failed">Dịch vụ sẽ không khởi động sau khi thiết bị đã khởi động lại, bạn sẽ không nhận được bất kỳ thông báo nào cho tới khi Tark Matrix được mở một lần.</string>
+    <string name="settings_troubleshoot_test_system_settings_permission_failed">Tark Matrix cần quyền để hiển thị thông báo.
+\nVui lòng trao quyền.</string>
+    <string name="soft_logout_sso_not_same_user_error">Phiên hiện tại dành cho người dùng %1$s và bạn cung cấp thông tin đăng nhập cho người dùng %2$s. Điều này không được hỗ trợ bởi Tark Matrix.
+\nTrước tiên, hãy xóa dữ liệu, sau đó đăng nhập lại trên tài khoản khác.</string>
+    <string name="use_latest_app">Sử dụng ${app_name mới nhất} trên các thiết bị khác của bạn:</string>
+    <string name="use_other_session_content_description">Sử dụng Tark Matrix mới nhất trên các thiết bị khác của bạn, Web Tark Matrix, Máy tính để bàn Tark Matrix, iOS Tark Matrix, Android Tark Matrix hoặc một máy khách Matrix khác có khả năng xác thực chéo</string>
+</resources>
