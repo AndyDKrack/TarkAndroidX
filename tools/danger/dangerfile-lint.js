@@ -1,3 +1,10 @@
+/**
+ * Copyright (c) 2025 Element Creations Ltd.
+ *
+ * SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-Element-Commercial.
+ * Please see LICENSE files in the repository root for full details.
+ */
+
 import { schedule } from 'danger'
 
 /**
@@ -26,4 +33,9 @@ schedule(reporter.scan({
      * This can be useful if there are multiple reports being parsed to make them distinguishable.
      */
      // outputPrefix?: ""
+
+    /**
+     * Optional: If set to true, it will remove duplicate violations.
+     */
+    removeDuplicates: true,
 }))

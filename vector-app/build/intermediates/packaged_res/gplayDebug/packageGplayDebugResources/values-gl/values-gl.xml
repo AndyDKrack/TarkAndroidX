@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string name="e2e_re_request_encryption_key_dialog_content">Inicie Tark Matrix noutro dispositivo que poida descifrar esta mensaxe e que despois desde alí lle poida enviar as chaves a este dispositivo.</string>
-    <string name="settings_opt_in_of_analytics_summary">Tark Matrix recolle información analítica anónima para permitirnos mellorar o aplicativo.</string>
-</resources>

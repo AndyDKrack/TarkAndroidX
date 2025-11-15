@@ -1,1 +1,0 @@
-me.dm7.barcodescanner.zxing

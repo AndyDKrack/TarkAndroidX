@@ -1,6 +1,7 @@
-# Copyright 2018-2024 New Vector Ltd.
+# Copyright (c) 2025 Element Creations Ltd.
+# Copyright 2023-2024 New Vector Ltd.
 #
-# SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-Element-Commercial
+# SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-Element-Commercial.
 # Please see LICENSE files in the repository root for full details.
 
 # This file list String which are not allowed in source code.
@@ -10,12 +11,7 @@
 # Example:
 # AuthorizedStringThreeTimes===3
 
-# Extension:java
 # Extension:kt
-
-# Use new SecureLinearLayoutManager
-# DISABLED
-#new LinearLayoutManager
 
 ### No import static: use full class name
 import static
@@ -32,9 +28,6 @@ formated
 abtract
 Succes[^s]
 succes[^s]
-
-### Please insert line break. ex: .flatMap() not at new line
-\}\)\.[\w]
 
 ### Use int instead of Integer
 protected Integer
@@ -65,22 +58,11 @@ DO NOT COMMIT
 # DISABLED To re-enable when code will be formatted globally
 #^\s*//[^\s]
 
-# Not usable with unitary test. Use StringUtils
-# DISABLED
-#TextUtils\.isEmpty\(
-
 ### invalid formatting (too many space char)
 ^      /\*
 
-# No ternary operator
-# DISABLED
-# \?
-
 ### unnecessary parenthesis around numbers, example: " (0)"
- \(\d+\)
-
-### Malformatted comment
-^    \*
+ \(\d+\)[^"]
 
 ### import the package, do not use long class name with package
 android\.os\.Build\.
@@ -105,29 +87,11 @@ setCompoundDrawablePadding\(0\)
 ### Bad formatting of chain (missing new line)
 \w\.flatMap\(
 
-### Bad formatting of Realm query chain. Insert new line
-# DISABLED
-# \)\.equalTo
-
-# Use StandardCharsets.UTF_8.name()
-# DISABLED (min API to low)
-#\"UTF-
-
-### Directly use getString() in a Fragment
-getActivity\(\)\.getString\(
-
 ### In Kotlin, Void has to be null safe, i.e. use 'Void?' instead of 'Void'
 \: Void\)
 
-### Home menu click is managed in parent Activity, with one exception
-android\.R\.id\.home===2
-
 ### Kotlin conversion tools introduce this, but is can be replace by trim()
 trim \{ it \<\= \' \' \}
-
-### Use MaterialAlertDialogBuilder
-android\.app\.AlertDialog
-androidx\.appcompat\.app\.AlertDialog===4
 
 ### Put the operator at the beginning of next line
  ==$
@@ -135,22 +99,11 @@ androidx\.appcompat\.app\.AlertDialog===4
 ### Use JsonUtils.getBasicGson()
 new Gson\(\)
 
-### Use matrixOneTimeWorkRequestBuilder
-import androidx.work.OneTimeWorkRequestBuilder===2
-
 ### Use TextUtils.formatFileSize
 Formatter\.formatFileSize===1
 
 ### Use TextUtils.formatFileSize with short format param to true
 Formatter\.formatShortFileSize===1
-
-### Use kotlin stdlib to test or compare strings
-# DISABLED
-# android\.text\.TextUtils
-
-### Do not import temporary legacy classes
-import org.matrix.android.sdk.internal.legacy.riot===3
-import org.matrix.androidsdk.crypto.data===2
 
 ### Use `Context#getSystemService` extension function provided by `core-ktx`
 getSystemService\(Context
@@ -158,22 +111,18 @@ getSystemService\(Context
 ### Use DefaultSharedPreferences.getInstance() instead for better performance
 PreferenceManager\.getDefaultSharedPreferences==2
 
-### Use ViewBindings
-# findViewById
-
-### Do not use `template_` string. Please remove the prefix `template_` to use the generated resource instead.
-R\.string\.template_
-
 ### Use the Clock interface, or use `measureTimeMillis`
-System\.currentTimeMillis\(\)===2
+System\.currentTimeMillis\(\)===1
 
 ### Remove extra space between the name and the description
 \* @\w+ \w+  +
 
-### Please use the MenuProvider interface now
-onCreateOptionsMenu
-onOptionsItemSelected
-onPrepareOptionsMenu
+### Suspicious String template. Please check that the string template will behave as expected, i.e. the class field and not the whole object will be used. For instance `Timber.d("$event.type")` is not correct, you should write `Timber.d("${event.type}")`. In the former the whole event content will be logged, since it's a data class.
+Timber.*\$[a-zA-Z_]\w*\??\.[a-zA-Z_]
 
-### Suspicious String template. Please check that the string template will behave as expected, i.e. the class field and not the whole object will be used. For instance `Timber.d("$event.type")` is not correct, you should write `Timber.d("${event.type}")`. In the former the whole event content will be logged, since it's a data class. If this is expected (i.e. to fix false positive), please add explicit curly braces (`{` and `}`) around the variable, for instance `"elementLogs.${i}.txt"`
-\$[a-zA-Z_]\w*\??\.[a-zA-Z_]
+### Use `import io.element.android.libraries.ui.strings.CommonStrings` then `CommonStrings.<stringKey>` instead
+import io\.element\.android\.libraries\.ui\.strings\.R
+
+# Accessibility
+### Use string resource for `contentDescription`, or null instead of empty string
+contentDescription = "

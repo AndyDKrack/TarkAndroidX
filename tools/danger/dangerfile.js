@@ -1,4 +1,13 @@
+/**
+ * Copyright (c) 2025 Element Creations Ltd.
+ *
+ * SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-Element-Commercial.
+ * Please see LICENSE files in the repository root for full details.
+ */
+
 const {danger, warn} = require('danger')
+const fs = require('fs')
+const path = require('path')
 
 /**
  * Note: if you update the checks in this file, please also update the file ./docs/danger.md
@@ -25,37 +34,18 @@ if (editedFiles.length > 50) {
     message("This pull request seems relatively large. Please consider splitting it into multiple smaller ones.")
 }
 
-// Request a changelog for each PR
-const changelogAllowList = [
-    "dependabot[bot]",
-]
+// Request a correct title for each PR
+if (pr.title.endsWith("…")) {
+    fail("Please provide a complete title that can be used as a changelog entry.")
+}
 
-const requiresChangelog = !changelogAllowList.includes(user)
-
-if (requiresChangelog) {
-    const changelogFiles = editedFiles.filter(file => file.startsWith("changelog.d/"))
-
-    if (changelogFiles.length == 0) {
-        warn("Please add a changelog. See instructions [here](https://github.com/element-hq/element-android/blob/develop/CONTRIBUTING.md#changelog)")
-    } else {
-        const validTowncrierExtensions = [
-            "bugfix",
-            "doc",
-            "feature",
-            "misc",
-            "sdk",
-            "wip",
-        ]
-        if (!changelogFiles.every(file => validTowncrierExtensions.includes(file.split(".").pop()))) {
-            fail("Invalid extension for changelog. See instructions [here](https://github.com/element-hq/element-android/blob/develop/CONTRIBUTING.md#changelog)")
-        }
-    }
+// Request a `PR-` label for each PR
+if (pr.labels.filter((label) => label.name.startsWith("PR-")).length != 1) {
+    fail("Please add a `PR-` label to categorise the changelog entry.")
 }
 
 // check that frozen classes have not been modified
 const frozenClasses = [
-    "OlmInboundGroupSessionWrapper.kt",
-    "OlmInboundGroupSessionWrapper2.kt",
 ]
 
 frozenClasses.forEach(frozen => {
@@ -65,66 +55,67 @@ frozenClasses.forEach(frozen => {
   }
 )
 
-// Check for a sign-off
-const signOff = "Signed-off-by:"
-
-// Please add new names following the alphabetical order.
-const allowList = [
-    "amitkma",
-    "aringenbach",
-    "BillCarsonFr",
-    "bmarty",
-    "Claire1817",
-    "dependabot[bot]",
-    "ericdecanini",
-    "fedrunov",
-    "Florian14",
-    "ganfra",
-    "jmartinesp",
-    "jonnyandrew",
-    "kittykat",
-    "langleyd",
-    "MadLittleMods",
-    "manuroe",
-    "mnaturel",
-    "onurays",
-    "ouchadam",
-    "stefanceriu",
-    "yostyle",
+const previewAnnotations = [
+    'androidx.compose.ui.tooling.preview.Preview',
+    'io.element.android.libraries.designsystem.preview.PreviewWithLargeHeight',
+    'io.element.android.libraries.designsystem.preview.PreviewsDayNight'
 ]
 
-const requiresSignOff = !allowList.includes(user)
+const filesWithPreviews = editedFiles.filter(file => file.endsWith(".kt")).filter(file => {
+    const content = fs.readFileSync(file);
+    return previewAnnotations.some((ann) => content.includes("import " + ann));
+})
 
-if (requiresSignOff) {
-    const hasPRBodySignOff = pr.body.includes(signOff)
-    const hasCommitSignOff = danger.git.commits.every(commit => commit.message.includes(signOff))
-    if (!hasPRBodySignOff && !hasCommitSignOff) {
-        fail("Please add a sign-off to either the PR description or to the commits themselves. See instructions [here](https://matrix-org.github.io/synapse/latest/development/contributing_guide.html#sign-off).")
-    }
-}
+const composablePreviewProviderContents = fs.readFileSync('tests/uitests/src/test/kotlin/base/ComposablePreviewProvider.kt');
+const packageTreesRegex = /private val PACKAGE_TREES = arrayOf\(([\w\W]+?)\n\)/gm;
+const packageTreesMatch = packageTreesRegex.exec(composablePreviewProviderContents)[1];
+const scannedPreviewPackageTrees = packageTreesMatch
+    .replaceAll("\"", "")
+    .replaceAll(",", "")
+    .split('\n').map((line) => line.trim())
+    .filter((line) => line.length > 0);
 
-// Check for screenshots on view changes
-const hasChangedViews = editedFiles.filter(file => file.includes("/layout")).length > 0
-if (hasChangedViews) {
-    if (!pr.body.includes("user-images")) {
-        warn("You seem to have made changes to views. Please consider adding screenshots.")
+const previewPackagesNotIncludedInScreenshotTests = filesWithPreviews.map((file) => {
+    const content = fs.readFileSync(file);
+    const packageRegex = /package\s+([a-zA-Z0-9.]+)/;
+    const packageMatch = packageRegex.exec(content);
+
+    if (!packageMatch || packageMatch.length != 2) {
+        return null;
     }
+
+    return packageMatch[1];
+
+
+}).filter((package) => {
+    if (!package) {
+        return false;
+    }
+    if (!scannedPreviewPackageTrees.some((prefix) => package.includes(prefix))) {
+        return true;
+    }
+});
+
+if (previewPackagesNotIncludedInScreenshotTests.length > 0) {
+    const packagesList = previewPackagesNotIncludedInScreenshotTests.map((p) => '- `' + p + '`').join("\n");
+    warn("You have made changes to a file containing a `@Preview` annotated function but its package name prefix is not included in the `ComposablePreviewProvider`.\nPackages missing in `tests/uitests/src/test/kotlin/base/ComposablePreviewProvider.kt`: \n" + packagesList);
 }
 
 // Check for pngs on resources
-const hasPngs = editedFiles.filter(file => file.toLowerCase().endsWith(".png")).length > 0
+const hasPngs = editedFiles.filter(file => {
+    file.toLowerCase().endsWith(".png") && !file.includes("snapshots/images/") // Exclude screenshots
+}).length > 0
 if (hasPngs) {
     warn("You seem to have made changes to some images. Please consider using an vector drawable.")
 }
 
-// Check for reviewers
-if (github.requested_reviewers.users.length == 0 && !pr.draft) {
-    warn("Please add a reviewer to your PR.")
-}
-
 // Check that translations have not been modified by developers
-if (user != "RiotTranslateBot") {
-   if (editedFiles.some(file => file.endsWith("strings.xml") && !file.endsWith("values/strings.xml"))) {
-       fail("Some translation files have been edited. Only user `RiotTranslateBot` (i.e. translations coming from Weblate) is allowed to do that.\nPlease read more about translations management [in the doc](https://github.com/element-hq/element-android/blob/develop/CONTRIBUTING.md#internationalisation).")
+const translationAllowList = [
+    "ElementBot",
+]
+
+if (!translationAllowList.includes(user)) {
+   if (editedFiles.some(file => file.endsWith("translations.xml"))) {
+       fail("Some translation files have been edited. Only user `ElementBot` (i.e. translations coming from Localazy) is allowed to do that.\nPlease read more about translations management [in the doc](https://github.com/element-hq/element-x-android/blob/develop/CONTRIBUTING.md#strings).")
    }
 }

@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string name="call_failed_no_connection">Tark Matrix Позив није успео</string>
-    <string name="settings_call_ringtone_use_app_ringtone">Користити звоно од Tark Matrix за долазне позиве</string>
-</resources>

@@ -2,23 +2,16 @@
 
 <!--- TOC -->
 
-* [Solution](#solution)
-* [How to add a new Event](#how-to-add-a-new-event)
-* [Forks of Element](#forks-of-element)
+* [Sentry](#sentry)
 
 <!--- END -->
 
-## Solution
+## Sentry
 
-Element is using PostHog to send analytics event.
-We ask for the user to give consent before sending any analytics data.
+To make Sentry analytics and bug reporting work, you need to provide a Sentry DSN in the `local.properties` file, or set the `ELEMENT_ANDROID_SENTRY_DSN` environment variable.
 
-## How to add a new Event
+The format used to add the DSN to your `local.properties` file is the following:
 
-The analytics plan is shared between all Element clients. To add an Event, please open a PR to this project: https://github.com/matrix-org/matrix-analytics-events
-
-Then, once the PR has been merged, and the library is release, you can update the version of the library in the `build.gradle` file.
-
-## Forks of Element
-
-Analytics on forks are disabled by default. Please refer to AnalyticsConfig and there implementation to setup analytics on your project.
+```properties
+services.analyticsproviders.sentry.dsn=https://your-sentry-dsn/project-id
+```

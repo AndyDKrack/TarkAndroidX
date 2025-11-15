@@ -1,64 +1,111 @@
-[![Latest build](https://github.com/element-hq/element-android/actions/workflows/build.yml/badge.svg?query=branch%3Adevelop)](https://github.com/element-hq/element-android/actions/workflows/build.yml?query=branch%3Adevelop)
-[![Weblate](https://translate.element.io/widgets/element-android/-/svg-badge.svg)](https://translate.element.io/engage/element-android/?utm_source=widget)
-[![Element Android Matrix room #element-android:matrix.org](https://img.shields.io/matrix/element-android:matrix.org.svg?label=%23element-android:matrix.org&logo=matrix&server_fqdn=matrix.org)](https://matrix.to/#/#element-android:matrix.org)
-[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=element-android&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=element-android)
-[![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=element-android&metric=vulnerabilities)](https://sonarcloud.io/summary/new_code?id=element-android)
-[![Bugs](https://sonarcloud.io/api/project_badges/measure?project=element-android&metric=bugs)](https://sonarcloud.io/summary/new_code?id=element-android)
+[![Latest build](https://github.com/element-hq/element-x-android/actions/workflows/build.yml/badge.svg?query=branch%3Adevelop)](https://github.com/element-hq/element-x-android/actions/workflows/build.yml?query=branch%3Adevelop)
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=element-x-android&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=element-x-android)
+[![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=element-x-android&metric=vulnerabilities)](https://sonarcloud.io/summary/new_code?id=element-x-android)
+[![Bugs](https://sonarcloud.io/api/project_badges/measure?project=element-x-android&metric=bugs)](https://sonarcloud.io/summary/new_code?id=element-x-android)
+[![codecov](https://codecov.io/github/element-hq/element-x-android/branch/develop/graph/badge.svg?token=ecwvia7amV)](https://codecov.io/github/vector-im/element-x-android)
+[![Element X Android Matrix room #element-x-android:matrix.org](https://img.shields.io/matrix/element-x-android:matrix.org.svg?label=%23element-x-android:matrix.org&logo=matrix&server_fqdn=matrix.org)](https://matrix.to/#/#element-x-android:matrix.org)
+[![Localazy](https://img.shields.io/endpoint?url=https%3A%2F%2Fconnect.localazy.com%2Fstatus%2Felement%2Fdata%3Fcontent%3Dall%26title%3Dlocalazy%26logo%3Dtrue)](https://localazy.com/p/element)
 
-# Element Android
+# Element X Android
 
-Element Classic Android is a previous-generation [Matrix](https://matrix.org/) client provided by [Element](https://element.io/). The app can be run on every Android devices with Android OS Lollipop and more (API 21). This client is still supported and receives security updates but no new features or usability enhancements are made. It is recommended to use [Element X](https://github.com/element-hq/element-x-android) that is the next-generation mobile app.
+Element X Android is the next-generation [Matrix](https://matrix.org/) client provided by [Element](https://element.io/).
 
-[<img src="resources/img/google-play-badge.png" alt="Get it on Google Play" height="60">](https://play.google.com/store/apps/details?id=im.vector.app)
-[<img src="resources/img/f-droid-badge.png" alt="Get it on F-Droid" height="60">](https://f-droid.org/app/im.vector.app)
+Compared to the previous-generation [Element Classic](https://github.com/element-hq/element-android), the application is a total rewrite, using the [Matrix Rust SDK](https://github.com/matrix-org/matrix-rust-sdk) underneath and targeting devices running Android 7+. The UI layer is written using [Jetpack Compose](https://developer.android.com/jetpack/compose), and the navigation is managed using [Appyx](https://github.com/bumble-tech/appyx).
 
-Build of develop branch: [![GitHub Action](https://github.com/element-hq/element-android/actions/workflows/build.yml/badge.svg?query=branch%3Adevelop)](https://github.com/element-hq/element-android/actions/workflows/build.yml?query=branch%3Adevelop) Nightly test status: [![allScreensTest](https://github.com/element-hq/element-android/actions/workflows/nightly.yml/badge.svg)](https://github.com/element-hq/element-android/actions/workflows/nightly.yml)
+[<img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" alt="Get it on Google Play" height="80">](https://play.google.com/store/apps/details?id=io.element.android.x)[<img src="https://fdroid.gitlab.io/artwork/badge/get-it-on.png" alt="Get it on F-Droid" height="80">](https://f-droid.org/packages/io.element.android.x)
 
+## Table of contents
 
-# New Android SDK
+<!--- TOC -->
 
-Element is based on a new Android SDK fully written in Kotlin (like Element). In order to make the early development as fast as possible, Element and the new SDK currently share the same git repository.
+* [Screenshots](#screenshots)
+* [Translations](#translations)
+* [Rust SDK](#rust-sdk)
+* [Status](#status)
+* [Minimum SDK version](#minimum-sdk-version)
+* [Contributing](#contributing)
+* [Build instructions](#build-instructions)
+* [Support](#support)
+* [Copyright and License](#copyright-and-license)
 
-At each Element release, the SDK module is copied to a dedicated repository: https://github.com/matrix-org/matrix-android-sdk2. That way, third party apps can add a regular gradle dependency to use it. So more details on how to do that here: https://github.com/matrix-org/matrix-android-sdk2.
+<!--- END -->
 
-# Roadmap
+## Screenshots
 
-The version 1.0.0 of Element still misses some features which was previously included in Riot-Android.
-The team will work to add them on a regular basis.
+Here are some screenshots of the application:
 
-# Releases to app stores
+<!--
+Commands run before taking the screenshots:
+adb shell settings put system time_12_24 24
+adb shell am broadcast -a com.android.systemui.demo -e command enter
+adb shell am broadcast -a com.android.systemui.demo -e command clock -e hhmm 1337
+adb shell am broadcast -a com.android.systemui.demo -e command network -e mobile show -e level 4
+adb shell am broadcast -a com.android.systemui.demo -e command network -e wifi show -e level 4
+adb shell am broadcast -a com.android.systemui.demo -e command notifications -e visible false
+adb shell am broadcast -a com.android.systemui.demo -e command battery -e plugged false -e level 100
 
-There is some delay between when a release is created and when it appears in the app stores (Google Play Store and F-Droid). Here are some of the reasons:
+And to exit demo mode:
+adb shell am broadcast -a com.android.systemui.demo -e command exit
+-->
 
-* Not all versioned releases that appear on GitHub are considered stable. Each release is first considered beta: this continues for at least two days. If the release is stable (no serious issues or crashes are reported), then it is released as a production release in Google Play Store, and a request is sent to F-Droid too.
-* Each release on the Google Play Store undergoes review by Google before it comes out. This can take an unpredictable amount of time. In some cases it has taken several weeks.
-* In order for F-Droid to guarantee that the app you receive exactly matches the public source code, they build releases themselves. When a release is considered stable, Element staff inform the F-Droid maintainers and it is added to the build queue. Depending on the load on F-Droid's infrastructure, it can take some time for releases to be built. This always takes at least 24 hours, and can take several days.
+|<img src="./docs/images-lfs/screen_1_light.png" width="280" />|<img src="./docs/images-lfs/screen_2_light.png" width="280" />|<img src="./docs/images-lfs/screen_3_light.png" width="280" />|<img src="./docs/images-lfs/screen_4_light.png" width="280" />|
+|-|-|-|-|
+|<img src="./docs/images-lfs/screen_1_dark.png" width="280" />|<img src="./docs/images-lfs/screen_2_dark.png" width="280" />|<img src="./docs/images-lfs/screen_3_dark.png" width="280" />|<img src="./docs/images-lfs/screen_4_dark.png" width="280" />|
 
-If you would like to receive releases more quickly (bearing in mind that they may not be stable) you have a number of options:
+## Translations
 
-1. [Sign up to receive beta releases](https://play.google.com/apps/testing/im.vector.app) via the Google Play Store.
-2. Install a [release APK](https://github.com/element-hq/element-android/releases) directly - download the relevant .apk file and allow installing from untrusted sources in your device settings.  Note: these releases are the Google Play version, which depend on some Google services.  If you prefer to avoid that, try the latest dev builds, and choose the F-Droid version.
-3. If you're really brave, install the [very latest dev build](https://github.com/element-hq/element-android/actions/workflows/build.yml?query=branch%3Adevelop) - pick a build, then click on `Summary` to download the APKs from there: `vector-Fdroid-debug` and `vector-Gplay-debug` contains the APK for the desired store. Each file contains 5 APKs. 4 APKs for every supported specific architecture of device. In doubt you can install the `universal` APK.
+Element X Android supports many languages. You can help us to translate the app in your language by joining our [Localazy project](https://localazy.com/p/element). You can also help us to improve the existing translations.
+
+Note that for now, we keep control on the French and German translations.
+
+Translations can be checked screen per screen using our tool Element X Android Gallery, available at https://element-hq.github.io/element-x-android/. Note that this page is updated every Tuesday.
+
+More instructions about translating the application can be found at [CONTRIBUTING.md](CONTRIBUTING.md#strings).
+
+## Rust SDK
+
+Element X leverages the [Matrix Rust SDK](https://github.com/matrix-org/matrix-rust-sdk) through an FFI layer that the final client can directly import and use.
+
+We're doing this as a way to share code between platforms and while we've seen promising results it's still in the experimental stage and bound to change.
+
+## Status
+
+This project is actively developed and supported. New users are recommended to use Element X instead of the previous-generation app.
+
+## Minimum SDK version
+
+Element X Android requires a minimum SDK version of 24 (Android 7.0, Nougat). We aim to support devices running Android 7.0 and above, which covers a wide range of devices still in use today.
+
+Element Android Enterprise requires a minimum SDK version of 33 (Android 13, Tiramisu). For Element Enterprise, we support only devices that still receive security updates, which means devices running Android 13 and above. Android does not have a documented support policy, but some information can be found at [https://endoflife.date/android](https://endoflife.date/android).
 
 ## Contributing
 
-Please refer to [CONTRIBUTING.md](./CONTRIBUTING.md) if you want to contribute on Matrix Android projects!
+Want to get actively involved in the project? You're more than welcome! A good way to start is to check the issues that are labelled with the [good first issue](https://github.com/element-hq/element-x-android/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22) label. Let us know by commenting the issue that you're starting working on it.
 
-Come chat with the community in the dedicated Matrix [room](https://matrix.to/#/#element-android:matrix.org).
+But first make sure to read our [contribution guide](CONTRIBUTING.md) first.
 
-Also [this documentation](./docs/_developer_onboarding.md) can hopefully help developers to start working on the project.
+You can also come chat with the community in the Matrix [room](https://matrix.to/#/#element-x-android:matrix.org) dedicated to the project.
 
-## Triaging issues
+## Build instructions
 
-Issues are triaged by community members and the Android App Team, following the [triage process](https://github.com/element-hq/element-meta/wiki/Triage-process).
+Just clone the project and open it in Android Studio. Make sure to select the
+`app` configuration when building (as we also have sample apps in the project).
 
-We use [issue labels](https://github.com/element-hq/element-meta/wiki/Issue-labelling) to sort all incoming issues.
+To build against a local copy of the Rust SDK, see the [Developer
+onboarding](docs/_developer_onboarding.md#building-the-sdk-locally) instructions.
+
+## Support
+
+When you are experiencing an issue on Element X Android, please first search in [GitHub issues](https://github.com/element-hq/element-x-android/issues)
+and then in [#element-x-android:matrix.org](https://matrix.to/#/#element-x-android:matrix.org).
+If after your research you still have a question, ask at [#element-x-android:matrix.org](https://matrix.to/#/#element-x-android:matrix.org). Otherwise feel free to create a GitHub issue if you encounter a bug or a crash, by explaining clearly in detail what happened. You can also perform bug reporting from the application settings. This is especially recommended when you encounter a crash.
 
 ## Copyright and License
 
-Copyright (c) 2018 - 2025 New Vector Ltd
+Copyright (c) 2025 Element Creations Ltd.
+Copyright (c) 2022 - 2025 New Vector Ltd.
 
-This software is dual licensed by New Vector Ltd (Element). It can be used either:
+This software is dual licensed by Element Creations Ltd (Element). It can be used either:
 
 (1) for free under the terms of the GNU Affero General Public License (as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version); OR
 

@@ -15,7 +15,7 @@
       * [When create split PR?](#when-create-split-pr?)
       * [Avoid fixing other unrelated issue in a big PR](#avoid-fixing-other-unrelated-issue-in-a-big-pr)
     * [Bots](#bots)
-      * [Dependabot](#dependabot)
+      * [Renovate](#renovate)
       * [Gradle wrapper](#gradle-wrapper)
       * [Sync analytics plan](#sync-analytics-plan)
 * [Reviewing PR](#reviewing-pr)
@@ -79,20 +79,20 @@ Exceptions can occur:
 
 **Important notice 1:** Releases are created from the `develop` branch. So `develop` branch should always contain a "releasable" source code. So when a feature is being implemented with several PRs, it has to be disabled by default (using a feature flag for instance), until the feature is fully implemented. A last PR to enable the feature can then be created.
 
-**Important notice 2:** Database migration: some developers and some people from the community are using the nightly build from `develop`. Multiple database migrations should be properly handled for them. This is OK to have multiple migrations between 2 releases, this is not OK to add steps to the pending database migration on `develop`. So for instance `develop` users will migrate from version 11 to version 12, then 13, then 14, and `main` users will do all those steps after they get the app upgrade.
+**Important notice 2:** Database migration: some developers and some people from the community are using the nightly build from `develop`. Multiple database migrations should be properly handled for them. It is OK to have multiple migrations between 2 releases, It is not OK to add steps to existing database migrations on `develop`. So for instance `develop` users will migrate from version 11 to version 12, then 13, then 14, and `main` users will do all those steps after they get the app upgrade.
 
 ##### PR Review Assignment
 
 We use automatic assignment for PR reviews. **A PR is automatically routed by GitHub to one team member** using the round robin algorithm. Additional reviewers can be used for complex changes or when the first reviewer is not confident enough on the changes.
 The process is the following:
 
-- The PR creator selects the [element-android-reviewers](https://github.com/orgs/element-hq/teams/element-android-reviewers) team as a reviewer.
+- The PR creator selects the [element-x-android-reviewers](https://github.com/orgs/element-hq/teams/element-x-android-reviewers) team as a reviewer.
 - GitHub automatically assign the reviewer. If the reviewer is not available (holiday, etc.), remove them and set again the team, GitHub will select another reviewer.
 - Alternatively, the PR creator can directly assign specific people if they have another Android developer in their team or they think a specific reviewer should take a look at their PR.
 - Reviewers get a notification to make the review: they review the code following the good practice (see the rest of this document).
 - After making their own review, if they feel not confident enough, they can ask another person for a full review, or they can tag someone within a PR comment to check specific lines.
 
-For PRs coming from the community, the issue wrangler can assign either the team [element-android-reviewers](https://github.com/orgs/element-hq/teams/element-android-reviewers) or any member directly.
+For PRs coming from the community, the issue wrangler can assign either the team [element-x-android-reviewers](https://github.com/orgs/element-hq/teams/element-x-android-reviewers) or any member directly.
 
 ##### PR review time
 
@@ -135,9 +135,9 @@ It's also applicable for code rework (such as renaming for instance), or code fo
 
 Some bots can create PR, but they still have to be reviewed by the team
 
-##### Dependabot
+##### Renovate
 
-Dependabot is a tool which maintain all our external dependencies up to date. A dedicated PR is created for each new available release for one of our external dependency.Dependabot
+Renovate is a tool which maintain all our external dependencies up to date. A dedicated PR is created for each new available release for one of our external dependencies.
 
 To review such PR, you have to
  - **IMPORTANT** check the diff files (as always).
@@ -146,7 +146,7 @@ To review such PR, you have to
  - If the code does not compile (API break for instance), you have to checkout the branch and push new commits
  - Do some smoke test, depending of the library which has been upgraded
 
-For some reason dependabot sometimes does not upgrade some dependencies. In this case, and when detected, the upgrade has to be done manually.
+For some reasons (like for instance a change in package declaration) the tool sometimes does not upgrade some dependencies. In this case, and when detected, the upgrade has to be done manually.
 
 ##### Gradle wrapper
 
@@ -173,7 +173,7 @@ But comment in PR from the community are always appreciated!
 4. Fork consideration. Will configuration of forks be easy? Some documentation may help in some cases.
 5. We are building long term products. "Quick and dirty" code must be avoided.
 6. The PR includes new tests for the added code, updated test for the existing code
-7. All PRs from external contributors **MUST** include a sign-off. It's in the checklist, and sometimes it's checked by the submitter, but there is actually no sign-off. In this case, ask nicely for a sign-off and request changes (do not approve the PR, even if everything else is fine).
+7. All commit authors must have signed the CLA. Please open https://cla-assistant.io/element-hq/element-x-android to agree to the CLA.
 
 ### Rules
 

@@ -1,81 +1,80 @@
-# Contributing to Element Android
+# Contributing to Element X Android
 
 <!--- TOC -->
 
+* [Developer onboarding](#developer-onboarding)
 * [Contributing code to Matrix](#contributing-code-to-matrix)
 * [Android Studio settings](#android-studio-settings)
-  * [Template](#template)
 * [Compilation](#compilation)
-* [I want to help translating Element](#i-want-to-help-translating-element)
+* [Strings](#strings)
+  * [I want to add new strings to the project](#i-want-to-add-new-strings-to-the-project)
+  * [I want to help translating Element](#i-want-to-help-translating-element)
+  * [Element X Android Gallery](#element-x-android-gallery)
 * [I want to submit a PR to fix an issue](#i-want-to-submit-a-pr-to-fix-an-issue)
   * [Kotlin](#kotlin)
   * [Changelog](#changelog)
   * [Code quality](#code-quality)
-    * [Internal tool](#internal-tool)
+    * [detekt](#detekt)
     * [ktlint](#ktlint)
     * [knit](#knit)
     * [lint](#lint)
   * [Unit tests](#unit-tests)
+    * [konsist](#konsist)
   * [Tests](#tests)
-  * [Internationalisation](#internationalisation)
-    * [Adding new string](#adding-new-string)
-      * [Plurals](#plurals)
-    * [Editing existing strings](#editing-existing-strings)
-    * [Removing existing strings](#removing-existing-strings)
-    * [Renaming string ids](#renaming-string-ids)
-    * [Reordering strings](#reordering-strings)
   * [Accessibility](#accessibility)
-  * [Layout](#layout)
+  * [Jetpack Compose](#jetpack-compose)
   * [Authors](#authors)
 * [Thanks](#thanks)
 
 <!--- END -->
 
+## Developer onboarding
+
+For a detailed overview of the project, see [Developer Onboarding](./docs/_developer_onboarding.md).
+
 ## Contributing code to Matrix
 
-Please read https://github.com/matrix-org/synapse/blob/master/CONTRIBUTING.md
+If instead of contributing to the Element X Android project, you want to contribute to Synapse, the homeserver implementation, please read the [Synapse contribution guide](https://element-hq.github.io/synapse/latest/development/contributing_guide.html).
 
-Element Android support can be found in this room: [![Element Android Matrix room #element-android:matrix.org](https://img.shields.io/matrix/element-android:matrix.org.svg?label=%23element-android:matrix.org&logo=matrix&server_fqdn=matrix.org)](https://matrix.to/#/#element-android:matrix.org).
+Element X Android support can be found in this room: [![Element X Android Matrix room #element-x-android:matrix.org](https://img.shields.io/matrix/element-x-android:matrix.org.svg?label=%23element-x-android:matrix.org&logo=matrix&server_fqdn=matrix.org)](https://matrix.to/#/#element-x-android:matrix.org).
 
-The rest of the document contains specific rules for Matrix Android projects
+The rest of the document contains specific rules for Matrix Android projects.
 
 ## Android Studio settings
 
 Please set the "hard wrap" setting of Android Studio to 160 chars, this is the setting we use internally to format the source code (Menu `Settings/Editor/Code Style` then `Hard wrap at`).
 Please ensure that you're using the project formatting rules (which are in the project at .idea/codeStyles/), and format the file before committing them.
 
-### Template
-
-An Android Studio template has been added to the project to help creating all files needed when adding a new screen to the application. Fragment, ViewModel, Activity, etc.
-
-To install the template (to be done only once):
-- Go to folder `./tools/template`.
-- Mac OSX: Run the script `./configure.sh`.
-
-   Linux: Run `ANDROID_STUDIO=/path/to/android-studio ./configure`
-    - e.g. `ANDROID_STUDIO=/usr/local/android-studio ./configure`
-
-- Restart Android Studio.
-
-To create a new screen:
-- First create a new package in your code.
-- Then right click on the package, and select `New/New Vector/Element Feature`.
-- Follow the Wizard, especially replace `Main` by something more relevant to your feature.
-- Click on `Finish`.
-- Remaining steps are described as TODO in the generated files, or will be pointed out by the compiler, or at runtime :)
-
-Note that if the templates are modified, the only things to do is to restart Android Studio for the change to take effect.
-
 ## Compilation
 
-For now, the Matrix SDK and the Element application are in the same project. So there is no specific thing to do, this project should compile without any special action.
+This project should compile without any special action. Just clone it and open it with Android Studio, or compile from command line using `gradlew`.
 
-See [docs/rust_crypto_integration.md](./docs/rust_crypto_integration.md#testing-with-a-local-rust-aar) for notes on building against a custom version of the Rust `matrix-sdk-crypto`.
+## Strings
 
-## I want to help translating Element
+The strings of the project are managed externally using [https://localazy.com](https://localazy.com) and shared with Element X iOS.
 
-If you want to fix an issue with an English string, please submit a PR.
-If you want to fix an issue in other languages, or add a missing translation, or even add a new language, please use [Weblate](https://translate.element.io/projects/element-android/).
+### I want to add new strings to the project
+
+Only the core team can modify or add English strings to Localazy. As an external contributor, if you want to add new strings, feel free to add an Android resource file to the project (for instance a file named `temporary.xml`), with a note in the description of the PR for the reviewer to integrate the String into `Localazy`. If accepted, the reviewer will add the String(s) for you, and then you can download them on your branch (following these [instructions](./tools/localazy/README.md#download-translations)) and remove the temporary file.
+
+Please follow the naming rules for the key. More details in [the dedicated section in this README.md](./tools/localazy/README.md#key-naming-rules)
+
+### I want to help translating Element
+
+To help translating, please go to [https://localazy.com/p/element](https://localazy.com/p/element).
+
+- If you want to fix an issue with an English string, please open an issue on the github project of Element X (Android or iOS). Only the core team can modify or add English strings.
+- If you want to fix an issue in other languages, or add a missing translation, or even add a new language, please go to [https://localazy.com/p/element](https://localazy.com/p/element).
+
+More information can be found [in this README.md](./tools/localazy/README.md).
+
+Once a language is sufficiently translated, it will be added to the app. The core team will decide when a language is sufficiently translated.
+
+### Element X Android Gallery
+
+Once added to Localazy, translations can be checked screen per screen using our tool Element X Android Gallery, available at https://element-hq.github.io/element-x-android/.
+
+Localazy syncs occur every Monday and the screenshots on this page are generated every Tuesday, so you'll have to wait to see your change appearing on Element X Android Gallery.
 
 ## I want to submit a PR to fix an issue
 
@@ -90,29 +89,24 @@ This project is full Kotlin. Please do not write Java classes.
 
 ### Changelog
 
-Please create at least one file under ./changelog.d containing details about your change. Towncrier will be used when preparing the release.
+The release notes are generated from the pull request titles and labels. If possible, the title must describe best what will be the user facing change.
 
-Towncrier says to use the PR number for the filename, but the issue number is also fine.
-
-Supported filename extensions are:
-
-- ``.feature``: Signifying a new feature in Element Android or in the Matrix SDK.
-- ``.bugfix``: Signifying a bug fix.
-- ``.wip``: Signifying a work in progress change, typically a component of a larger feature which will be enabled once all tasks are complete.
-- ``.doc``: Signifying a documentation improvement.
-- ``.sdk``: Signifying a change to the Matrix SDK, this could be an addition, deprecation or removal of a public API.
-- ``.misc``: Any other changes.
-
-See https://github.com/twisted/towncrier#news-fragments if you need more details.
+You will also need to add a label starting by `PR-` to you Pull Request to help categorize the release note. The label should be added by the PR author, but can be added by the reviewer if the submitter does not have right to add label. Also note that the label can be added after the PR has been merged, as soon as the release is not done yet.
 
 ### Code quality
 
 Make sure the following commands execute without any error:
 
-#### Internal tool
+<pre>
+./tools/quality/check.sh
+</pre>
+
+Some separate commands can also be run, see below.
+
+#### detekt
 
 <pre>
-./tools/check/check_code_quality.sh
+./gradlew detekt
 </pre>
 
 #### ktlint
@@ -149,8 +143,7 @@ The CI will check that markdown files are up to date by running
 #### lint
 
 <pre>
-./gradlew lintGplayRelease
-./gradlew lintFdroidRelease
+./gradlew lint
 </pre>
 
 ### Unit tests
@@ -158,70 +151,19 @@ The CI will check that markdown files are up to date by running
 Make sure the following commands execute without any error:
 
 <pre>
-./gradlew testGplayReleaseUnitTest
+./gradlew test
 </pre>
+
+#### konsist
+
+[konsist](https://github.com/LemonAppDev/konsist) is setup in the project to check that the architecture and the naming rules are followed. Konsist tests are classical Unit tests.
 
 ### Tests
 
-Element is currently supported on Android Lollipop (API 21+): please test your change on an Android device (or Android emulator) running with API 21. Many issues can happen (including crashes) on older devices.
+Element X is currently supported on Android Marshmallow (API 23+): please test your change on an Android device (or Android emulator) running with API 23. Many issues can happen (including crashes) on older devices.
 Also, if possible, please test your change on a real device. Testing on Android emulator may not be sufficient.
 
 You should consider adding Unit tests with your PR, and also integration tests (AndroidTest). Please refer to [this document](./docs/integration_tests.md) to install and run the integration test environment.
-
-### Internationalisation
-
-Translations are handled using an external tool: [Weblate](https://translate.element.io/projects/element-android/)
-
-**As a general rule, please never edit or add or remove translations to the project in a Pull Request**. It can lead to merge conflict if the translations are also modified in Weblate side. Pull Request containing change(s) on the translation files cannot be merged.
-
-#### Adding new string
-
-When adding new string resources, please only add new entries in the file `values/strings.xml` ([this file](./library/ui-strings/src/main/res/values/strings.xml)). Translations will be added later by the community of translators using Weblate.
-
-The file `values/strings.xml` must only contain American English (U. S. English) values, as this is the default language of the Android operating system. So for instance, please use "color" instead of "colour". Element Android will still use the language set on the system by the user, like any other Android applications which provide translations. The system language can be any other English language variants, or any other languages. Note that this is also possible to override the system language using the Element Android in-app language settings.
-
-New strings can be added anywhere in the file `values/strings.xml`, not necessarily at the end of the file. Generally, it's even better to add the new strings in some dedicated section per feature, and not at the end of the file, to avoid merge conflict between 2 PR adding strings at the end of the same file.
-
-##### Plurals
-
-Please use `plurals` resources when appropriate, and note that some languages have specific rules for `plurals`, so even if the string will always be at the plural form for English, please always create a `plurals` resource.
-
-Specific plural forms can be found [here](https://unicode-org.github.io/cldr-staging/charts/37/supplemental/language_plural_rules.html).
-
-#### Editing existing strings
-
-Two cases:
-- If the meaning stays the same, it's OK to edit the original string (i.e. the English version).
-- If the meaning is not the same, please create a new string and do not remove the existing string. See below for instructions to remove existing string.
-
-#### Removing existing strings
-
-If a string is not used anymore, it should be removed from the resource, but please do not remove the strings or its translations in the PR. It can lead to merge conflict with Weblate, and to lint error if new translations from deleted strings are added with Weblate.
-
-Instead, please comment the original string with:
-```xml
-<!-- TODO TO BE REMOVED -->
-```
-And add `tools:ignore="UnusedResources"` to the string, to let lint ignore that the string is not used.
-
-The string will be removed during the next sync with Weblate.
-
-#### Renaming string ids
-
-This is possible to rename ids of the String resources, but since translation files cannot be edited, add TODO in the main strings.xml file above the strings you want to rename. 
-
-```xml
-<!-- TODO Rename id to put_new_id_here -->
-<string name="current_id">Hello Matrix world!</string>
-```
-
-The string id(s) will be renamed during the next Weblate sync.
-
-#### Reordering strings
-
-To group strings per feature, or for any other reasons, it is possible to reorder string resources, but only in the [main strings.xml file](./library/ui-strings/src/main/res/values/strings.xml). ). We do not mind about ordering in the translation files, and anyway this is forbidden to edit manually the translation files.
-
-It is also possible to add empty lines between string resources, and to add XML comments. Please note that the XML comment just above a String resource will also appear on Weblate and be visible to the translators.
 
 ### Accessibility
 
@@ -229,12 +171,20 @@ Please consider accessibility as an important point. As a minimum requirement, i
 
 For instance, when updating the image `src` of an ImageView, please also consider updating its `contentDescription`. A good example is a play pause button.
 
-### Layout
+### Jetpack Compose
 
-When adding or editing layouts, make sure the layout will render correctly if device uses a RTL (Right To Left) language.
-You can check this in the layout editor preview by selecting any RTL language (ex: Arabic).
+When adding or editing `@Composable`, make sure that you create an internal function annotated with `@PreviewsDayNight`, with a name suffixed by `Preview`, and having `ElementPreview` as the root composable.
 
-Also please check that the colors are ok for all the current themes of Element. Please use `?attr` instead of `@color` to reference colors in the layout. You can check this in the layout editor preview by selecting all the main themes (`AppTheme.Status`, `AppTheme.Dark`, etc.).
+Example:
+```kotlin
+@PreviewsDayNight
+@Composable
+internal fun PinIconPreview() = ElementPreview {
+    PinIcon()
+}
+```
+
+This will allow to preview the composable in both light and dark mode in Android Studio. This will also automatically add UI tests. The GitHub action [Record screenshots](https://github.com/element-hq/element-x-android/actions/workflows/recordScreenshots.yml) has to be run to record the new screenshots. The PR reviewer can trigger this for you if you're not part of the core team. 
 
 ### Authors
 

@@ -10,19 +10,17 @@
 
 ## Configuration
 
-The nightly build will contain what's on develop, in release mode, for Gplay variant. It is signed using a dedicated signature, and has a dedicated appId (`im.vector.app.nightly`), so it can be installed along with the production version of Element Android. The only other difference compared to Element Android is a different app icon background. We do not want to change the app name since it will also affect some strings in the app, and we do want to do that.
+The nightly build will contain what's on develop, in release mode, for the main variant. It is signed using a dedicated signature, and has a dedicated appId (`io.element.android.x.nightly`), so it can be installed along with the production version of Element X Android. The only other difference compared to ElementX Android is a different app name. We do not want to change the app name since it will also affect some strings in the app, and we do want to do that. (TODO today, the app name is changed.)
 
 Nightly builds are built and released to Firebase every days, and automatically.
 
-This is recommended to exclusively use this app, with your main account, instead of Element Android, and fallback to Element Android just in case of regression, to discover as soon as possible any regression, and report it to the team. To avoid double notification, you may want to disable the notification from the Element Android production version. Just open Element Android, navigate to `Settings/Notifications` and uncheck `Enable notifications for this session`.
+This is recommended to exclusively use this app, with your main account, instead of Element X Android, and fallback to ElementX Android just in case of regression, to discover as soon as possible any regression, and report it to the team. To avoid double notification, you may want to disable the notification from the Element Android production version. Just open Element Android, navigate to `Settings/Notifications` and uncheck `Enable notifications for this session` (TODO Not supported yet).
 
 *Note:* Due to a limitation of Firebase, the nightly build is the universal build, which means that the size of the APK is a bit bigger, but this should not have any other side effect.
 
 ## How to register to get nightly build
 
-Provide your email to the Android team, who will add it to the list "External testers" on Firebase. You will then receive an invite on the provided email.
-
-Follow the instructions on the email to install the latest nightly build. This is not clear yet if new nightly build will be automatically installed or not.
+Click on this link and follow the instruction: [https://appdistribution.firebase.dev/i/7de2dbc61e7fb2a6](https://appdistribution.firebase.dev/i/7de2dbc61e7fb2a6)
 
 ## Build nightly manually
 
@@ -44,11 +42,7 @@ Then you can run the following commands (which are also used in the file for [th
 
 ```sh
 git checkout develop
-mv towncrier.toml towncrier.toml.bak
-sed 's/CHANGES\.md/CHANGES_NIGHTLY\.md/' towncrier.toml.bak > towncrier.toml
-rm towncrier.toml.bak
-yes n | towncrier build --version nightly
-./gradlew assembleGplayNightly appDistributionUploadNightly $CI_GRADLE_ARG_PROPERTIES
+./gradlew assembleGplayNightly appDistributionUploadGplayNightly
 ```
 
 Then you can reset the change on the codebase.

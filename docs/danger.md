@@ -22,10 +22,9 @@ Here are the checks that Danger does so far:
 
 - PR description is not empty
 - Big PR got a warning to recommend to split
-- PR contains a file for towncrier and extension is checked
+- PR contains a correct title and a label to categorize the release note
 - PR does not modify frozen classes
-- PR contains a Sign-Off, with exception for Element employee contributors
-- PR with change on layout should include screenshot in the description
+- PR with change on layout should include screenshot in the description (TODO Not supported yet!)
 - PR which adds png file warn about the usage of vector drawables
 - non draft PR should have a reviewer
 - files containing translations are not modified by developers
@@ -84,7 +83,7 @@ bundle exec danger-kotlin pr <PR_URL> --dangerfile=./tools/danger/dangerfile.js
 To let Danger check all the PRs, including PRs form forks, a GitHub account have been created:
 - login: ElementBot
 - password: Stored on Passbolt
-- GitHub token: A token with limited access has been created and added to the repository https://github.com/element-hq/element-android as secret DANGER_GITHUB_API_TOKEN. This token is not saved anywhere else. In case of problem, just delete it and create a new one, then update the secret.
+- GitHub token: A token with limited access has been created and added to the repository https://github.com/element-hq/element-x-android as secret DANGER_GITHUB_API_TOKEN. This token is not saved anywhere else. In case of problem, just delete it and create a new one, then update the secret.
 
 PRs from forks do not always have access to the secret `secrets.DANGER_GITHUB_API_TOKEN`, so `secrets.GITHUB_TOKEN` is also provided to the job environment. If `secrets.DANGER_GITHUB_API_TOKEN` is available, it will be used, so user `ElementBot` will comment the PR. Else `secrets.GITHUB_TOKEN` will be used, and bot `github-actions` will comment the PR.
 
